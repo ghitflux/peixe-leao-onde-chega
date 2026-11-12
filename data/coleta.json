@@ -1,0 +1,212 @@
+{
+  "coletado_em": "2026-11-12T05:41+00:00",
+  "fontes": {
+    "nas": "https://nas.er.usgs.gov/api/v2/occurrence/search?species_ID=963",
+    "gbif": "https://api.gbif.org/v1/occurrence/search (taxonKey 2334432, gênero Pterois)",
+    "obis": "https://api.obis.org/v3/occurrence (scientificname=Pterois)",
+    "esforco": "GBIF, contagem por célula e ano das famílias Pomacentridae, Labridae, Scaridae, Chaetodontidae, Acanthuridae, Pomacanthidae, Haemulidae, Lutjanidae, Serranidae, Epinephelidae, Sparidae",
+    "relevo": "NOAA ETOPO1 via ERDDAP (etopo180), um ponto a cada 0,1 grau",
+    "temperatura": "NOAA OISST v2.1 via ERDDAP (ncdcOisst21Agg_LonPM180), 2011-2020, um dia a cada 30",
+    "costa": "Natural Earth 1:110m (domínio público)"
+  },
+  "arquivos_brutos": {
+    "costa_110m.geojson": {
+      "bytes": 139907,
+      "sha256": "851f581ff5ffb844"
+    },
+    "esforco.json": {
+      "bytes": 177671,
+      "sha256": "2270067fac06f665"
+    },
+    "gbif_atlantico.json": {
+      "bytes": 7396492,
+      "sha256": "9ebb1aea1651c3b9"
+    },
+    "gbif_mediterraneo.json": {
+      "bytes": 911057,
+      "sha256": "14b2c510383ebd0c"
+    },
+    "nas.json": {
+      "bytes": 11614033,
+      "sha256": "5f7251935e022204"
+    },
+    "obis_atlantico.json": {
+      "bytes": 3504766,
+      "sha256": "cb7882f6725a6c8b"
+    },
+    "obis_mediterraneo.json": {
+      "bytes": 1194535,
+      "sha256": "a8b02cb3d47b137c"
+    },
+    "oisst_atlantico_2011.nc": {
+      "bytes": 1133512,
+      "sha256": "5e752ebb916dcbaf"
+    },
+    "oisst_atlantico_2012.nc": {
+      "bytes": 1133512,
+      "sha256": "74244774c183c5a7"
+    },
+    "oisst_atlantico_2013.nc": {
+      "bytes": 1133512,
+      "sha256": "31d385a2ee0a1325"
+    },
+    "oisst_atlantico_2014.nc": {
+      "bytes": 1133512,
+      "sha256": "6f92655d29f9e87e"
+    },
+    "oisst_atlantico_2015.nc": {
+      "bytes": 1133512,
+      "sha256": "76a9c3fa858ddfc4"
+    },
+    "oisst_atlantico_2016.nc": {
+      "bytes": 1133512,
+      "sha256": "2ae95fa95991ff74"
+    },
+    "oisst_atlantico_2017.nc": {
+      "bytes": 1133512,
+      "sha256": "206231f3e01f1e2f"
+    },
+    "oisst_atlantico_2018.nc": {
+      "bytes": 1133512,
+      "sha256": "027a4a3da702780d"
+    },
+    "oisst_atlantico_2019.nc": {
+      "bytes": 1133512,
+      "sha256": "8c76fb41bb0db2c3"
+    },
+    "oisst_atlantico_2020.nc": {
+      "bytes": 1133512,
+      "sha256": "589388027113b644"
+    },
+    "oisst_mediterraneo_2011.nc": {
+      "bytes": 146072,
+      "sha256": "b8147e49a49aef51"
+    },
+    "oisst_mediterraneo_2012.nc": {
+      "bytes": 146072,
+      "sha256": "335d1e1934b80fe8"
+    },
+    "oisst_mediterraneo_2013.nc": {
+      "bytes": 146072,
+      "sha256": "b4a59c20c1a9a56c"
+    },
+    "oisst_mediterraneo_2014.nc": {
+      "bytes": 146072,
+      "sha256": "8622593466ebfa7f"
+    },
+    "oisst_mediterraneo_2015.nc": {
+      "bytes": 146072,
+      "sha256": "3fb697976c747c10"
+    },
+    "oisst_mediterraneo_2016.nc": {
+      "bytes": 146072,
+      "sha256": "021c432595fa1b1b"
+    },
+    "oisst_mediterraneo_2017.nc": {
+      "bytes": 146072,
+      "sha256": "3290e02642c70a35"
+    },
+    "oisst_mediterraneo_2018.nc": {
+      "bytes": 146072,
+      "sha256": "6d34f55a05cd1773"
+    },
+    "oisst_mediterraneo_2019.nc": {
+      "bytes": 146072,
+      "sha256": "bcb4a9c1bfb4e2e4"
+    },
+    "oisst_mediterraneo_2020.nc": {
+      "bytes": 146072,
+      "sha256": "7e6ea8f15898bb5a"
+    },
+    "relevo_atlantico.csv": {
+      "bytes": 17915876,
+      "sha256": "bda15a55223409f0"
+    },
+    "relevo_mediterraneo.csv": {
+      "bytes": 2380147,
+      "sha256": "a3e7fa477764f21b"
+    }
+  },
+  "funil": [
+    {
+      "passo": "Registros baixados (gênero Pterois nas caixas dos dois teatros; NAS inteiro)",
+      "total": 40376,
+      "NAS": 12419,
+      "GBIF": 15208,
+      "OBIS": 12749
+    },
+    {
+      "passo": "Com coordenada e ano",
+      "total": 39558,
+      "NAS": 12419,
+      "GBIF": 15208,
+      "OBIS": 11931
+    },
+    {
+      "passo": "Dentro da área invadida (fora do Pacífico, do Mar Vermelho e do Mar Negro)",
+      "total": 39553,
+      "NAS": 12419,
+      "GBIF": 15205,
+      "OBIS": 11929
+    },
+    {
+      "passo": "Sem espécime vivo de coleção ou aquário",
+      "total": 39541,
+      "NAS": 12418,
+      "GBIF": 15194,
+      "OBIS": 11929
+    },
+    {
+      "passo": "Com ano entre a introdução e o último ano completo",
+      "total": 38468,
+      "NAS": 12379,
+      "GBIF": 14518,
+      "OBIS": 11571
+    },
+    {
+      "passo": "Sem duplicata entre fontes",
+      "total": 13603,
+      "NAS": 7127,
+      "GBIF": 5046,
+      "OBIS": 1430
+    },
+    {
+      "passo": "Sem coordenada em terra (ponto e vizinhos de 0,1 grau acima do nível do mar)",
+      "total": 13544,
+      "NAS": 7117,
+      "GBIF": 4998,
+      "OBIS": 1429
+    },
+    {
+      "passo": "Em célula de plataforma, ou a até uma célula de distância (fica na mais próxima)",
+      "total": 13349,
+      "NAS": 7070,
+      "GBIF": 4850,
+      "OBIS": 1429
+    },
+    {
+      "passo": "Servem para datar a chegada (têm outro registro por perto em até 3 anos)",
+      "total": 13284,
+      "NAS": 7053,
+      "GBIF": 4823,
+      "OBIS": 1408
+    }
+  ],
+  "ausencias_no_gbif": {
+    "atlantico": 26861,
+    "mediterraneo": 3131
+  },
+  "celulas": {
+    "atlantico": 617,
+    "mediterraneo": 237
+  },
+  "celulas_com_registro": {
+    "atlantico": 248,
+    "mediterraneo": 86
+  },
+  "registros_limpos_por_teatro": {
+    "atlantico": 10909,
+    "mediterraneo": 2440
+  },
+  "conjuntos_de_dados": 94
+}

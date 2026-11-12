@@ -1,0 +1,3866 @@
+{
+  "coleta": {
+    "data": "2026-11-12",
+    "fontes": {
+      "nas": "https://nas.er.usgs.gov/api/v2/occurrence/search?species_ID=963",
+      "gbif": "https://api.gbif.org/v1/occurrence/search (taxonKey 2334432, gênero Pterois)",
+      "obis": "https://api.obis.org/v3/occurrence (scientificname=Pterois)",
+      "esforco": "GBIF, contagem por célula e ano das famílias Pomacentridae, Labridae, Scaridae, Chaetodontidae, Acanthuridae, Pomacanthidae, Haemulidae, Lutjanidae, Serranidae, Epinephelidae, Sparidae",
+      "relevo": "NOAA ETOPO1 via ERDDAP (etopo180), um ponto a cada 0,1 grau",
+      "temperatura": "NOAA OISST v2.1 via ERDDAP (ncdcOisst21Agg_LonPM180), 2011-2020, um dia a cada 30",
+      "costa": "Natural Earth 1:110m (domínio público)"
+    },
+    "funil": [
+      {
+        "passo": "Registros baixados (gênero Pterois nas caixas dos dois teatros; NAS inteiro)",
+        "total": 40376,
+        "NAS": 12419,
+        "GBIF": 15208,
+        "OBIS": 12749
+      },
+      {
+        "passo": "Com coordenada e ano",
+        "total": 39558,
+        "NAS": 12419,
+        "GBIF": 15208,
+        "OBIS": 11931
+      },
+      {
+        "passo": "Dentro da área invadida (fora do Pacífico, do Mar Vermelho e do Mar Negro)",
+        "total": 39553,
+        "NAS": 12419,
+        "GBIF": 15205,
+        "OBIS": 11929
+      },
+      {
+        "passo": "Sem espécime vivo de coleção ou aquário",
+        "total": 39541,
+        "NAS": 12418,
+        "GBIF": 15194,
+        "OBIS": 11929
+      },
+      {
+        "passo": "Com ano entre a introdução e o último ano completo",
+        "total": 38468,
+        "NAS": 12379,
+        "GBIF": 14518,
+        "OBIS": 11571
+      },
+      {
+        "passo": "Sem duplicata entre fontes",
+        "total": 13603,
+        "NAS": 7127,
+        "GBIF": 5046,
+        "OBIS": 1430
+      },
+      {
+        "passo": "Sem coordenada em terra (ponto e vizinhos de 0,1 grau acima do nível do mar)",
+        "total": 13544,
+        "NAS": 7117,
+        "GBIF": 4998,
+        "OBIS": 1429
+      },
+      {
+        "passo": "Em célula de plataforma, ou a até uma célula de distância (fica na mais próxima)",
+        "total": 13349,
+        "NAS": 7070,
+        "GBIF": 4850,
+        "OBIS": 1429
+      },
+      {
+        "passo": "Servem para datar a chegada (têm outro registro por perto em até 3 anos)",
+        "total": 13284,
+        "NAS": 7053,
+        "GBIF": 4823,
+        "OBIS": 1408
+      }
+    ],
+    "ausencias_no_gbif": {
+      "atlantico": 26861,
+      "mediterraneo": 3131
+    },
+    "registros_limpos_por_teatro": {
+      "atlantico": 10909,
+      "mediterraneo": 2440
+    },
+    "conjuntos_de_dados": 94
+  },
+  "configuracao": {
+    "ano_final": 2025,
+    "inicio_da_expansao": {
+      "atlantico": 2000,
+      "mediterraneo": 2012
+    },
+    "cortes": {
+      "atlantico": [
+        2010,
+        2018
+      ],
+      "mediterraneo": [
+        2018
+      ]
+    },
+    "celula_graus": 1,
+    "profundidade_maxima_m": 300
+  },
+  "teatros": {
+    "atlantico": {
+      "celulas_de_plataforma": 617,
+      "celulas_com_registro": 248,
+      "fracao_com_registro": 0.4019448946515397,
+      "celulas_so_com_registro_nao_corroborado": 6,
+      "celulas_com_ano_alterado_pela_corroboracao": 5,
+      "primeiro_ano": 1990,
+      "ano_de_inicio_da_expansao": 2000,
+      "celulas_semente": 6,
+      "ano_de_pico": 2009,
+      "novas_celulas_no_pico": 48,
+      "novas_celulas_nos_ultimos_5_anos": 21,
+      "frente_km_no_ano_final": 6565.3552345954195,
+      "celula_mais_distante": "A_S09_W035",
+      "fontes_do_primeiro_registro": {
+        "celulas": 248,
+        "NAS": {
+          "celulas_com_registro": 219,
+          "celulas_em_que_tem_o_primeiro_ano": 211,
+          "celulas_so_nesta_fonte": 80
+        },
+        "GBIF": {
+          "celulas_com_registro": 166,
+          "celulas_em_que_tem_o_primeiro_ano": 55,
+          "celulas_so_nesta_fonte": 28
+        },
+        "OBIS": {
+          "celulas_com_registro": 10,
+          "celulas_em_que_tem_o_primeiro_ano": 1,
+          "celulas_so_nesta_fonte": 1
+        }
+      },
+      "area_e_frente": [
+        {
+          "ano": 1985,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1986,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1987,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1988,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1989,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1990,
+          "celulas_com_registro": 1,
+          "frente_km": 114.0291634862,
+          "novas_celulas": 1
+        },
+        {
+          "ano": 1991,
+          "celulas_com_registro": 1,
+          "frente_km": 114.0291634862,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1992,
+          "celulas_com_registro": 1,
+          "frente_km": 114.0291634862,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1993,
+          "celulas_com_registro": 1,
+          "frente_km": 114.0291634862,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1994,
+          "celulas_com_registro": 1,
+          "frente_km": 114.0291634862,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1995,
+          "celulas_com_registro": 2,
+          "frente_km": 114.0291634862,
+          "novas_celulas": 1
+        },
+        {
+          "ano": 1996,
+          "celulas_com_registro": 2,
+          "frente_km": 114.0291634862,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1997,
+          "celulas_com_registro": 2,
+          "frente_km": 114.0291634862,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1998,
+          "celulas_com_registro": 2,
+          "frente_km": 114.0291634862,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1999,
+          "celulas_com_registro": 2,
+          "frente_km": 114.0291634862,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 2000,
+          "celulas_com_registro": 6,
+          "frente_km": 114.0291634862,
+          "novas_celulas": 4
+        },
+        {
+          "ano": 2001,
+          "celulas_com_registro": 14,
+          "frente_km": 114.0291634862,
+          "novas_celulas": 8
+        },
+        {
+          "ano": 2002,
+          "celulas_com_registro": 18,
+          "frente_km": 114.0291634862,
+          "novas_celulas": 4
+        },
+        {
+          "ano": 2003,
+          "celulas_com_registro": 21,
+          "frente_km": 114.0291634862,
+          "novas_celulas": 3
+        },
+        {
+          "ano": 2004,
+          "celulas_com_registro": 25,
+          "frente_km": 302.8880435538,
+          "novas_celulas": 4
+        },
+        {
+          "ano": 2005,
+          "celulas_com_registro": 32,
+          "frente_km": 546.0471419815,
+          "novas_celulas": 7
+        },
+        {
+          "ano": 2006,
+          "celulas_com_registro": 36,
+          "frente_km": 601.1920540562,
+          "novas_celulas": 4
+        },
+        {
+          "ano": 2007,
+          "celulas_com_registro": 54,
+          "frente_km": 1126.0203406826,
+          "novas_celulas": 18
+        },
+        {
+          "ano": 2008,
+          "celulas_com_registro": 75,
+          "frente_km": 2029.9346389842,
+          "novas_celulas": 21
+        },
+        {
+          "ano": 2009,
+          "celulas_com_registro": 123,
+          "frente_km": 2391.4827424613,
+          "novas_celulas": 48
+        },
+        {
+          "ano": 2010,
+          "celulas_com_registro": 148,
+          "frente_km": 2457.0042395837,
+          "novas_celulas": 25
+        },
+        {
+          "ano": 2011,
+          "celulas_com_registro": 179,
+          "frente_km": 2621.5225570855,
+          "novas_celulas": 31
+        },
+        {
+          "ano": 2012,
+          "celulas_com_registro": 193,
+          "frente_km": 2734.7639769545,
+          "novas_celulas": 14
+        },
+        {
+          "ano": 2013,
+          "celulas_com_registro": 206,
+          "frente_km": 2734.7639769545,
+          "novas_celulas": 13
+        },
+        {
+          "ano": 2014,
+          "celulas_com_registro": 214,
+          "frente_km": 2734.7639769545,
+          "novas_celulas": 8
+        },
+        {
+          "ano": 2015,
+          "celulas_com_registro": 215,
+          "frente_km": 2734.7639769545,
+          "novas_celulas": 1
+        },
+        {
+          "ano": 2016,
+          "celulas_com_registro": 222,
+          "frente_km": 2734.7639769545,
+          "novas_celulas": 7
+        },
+        {
+          "ano": 2017,
+          "celulas_com_registro": 223,
+          "frente_km": 2734.7639769545,
+          "novas_celulas": 1
+        },
+        {
+          "ano": 2018,
+          "celulas_com_registro": 224,
+          "frente_km": 2734.7639769545,
+          "novas_celulas": 1
+        },
+        {
+          "ano": 2019,
+          "celulas_com_registro": 224,
+          "frente_km": 2734.7639769545,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 2020,
+          "celulas_com_registro": 227,
+          "frente_km": 6283.3182473902,
+          "novas_celulas": 3
+        },
+        {
+          "ano": 2021,
+          "celulas_com_registro": 231,
+          "frente_km": 6283.3182473902,
+          "novas_celulas": 4
+        },
+        {
+          "ano": 2022,
+          "celulas_com_registro": 241,
+          "frente_km": 6283.3182473902,
+          "novas_celulas": 10
+        },
+        {
+          "ano": 2023,
+          "celulas_com_registro": 245,
+          "frente_km": 6476.2159784095,
+          "novas_celulas": 4
+        },
+        {
+          "ano": 2024,
+          "celulas_com_registro": 246,
+          "frente_km": 6476.2159784095,
+          "novas_celulas": 1
+        },
+        {
+          "ano": 2025,
+          "celulas_com_registro": 248,
+          "frente_km": 6565.3552345954,
+          "novas_celulas": 2
+        }
+      ]
+    },
+    "mediterraneo": {
+      "celulas_de_plataforma": 237,
+      "celulas_com_registro": 86,
+      "fracao_com_registro": 0.3628691983122363,
+      "celulas_so_com_registro_nao_corroborado": 6,
+      "celulas_com_ano_alterado_pela_corroboracao": 11,
+      "primeiro_ano": 2012,
+      "ano_de_inicio_da_expansao": 2012,
+      "celulas_semente": 1,
+      "ano_de_pico": 2019,
+      "novas_celulas_no_pico": 18,
+      "novas_celulas_nos_ultimos_5_anos": 17,
+      "frente_km_no_ano_final": 3080.614002320319,
+      "celula_mais_distante": "M_N43_E005",
+      "fontes_do_primeiro_registro": {
+        "celulas": 86,
+        "NAS": {
+          "celulas_com_registro": 0,
+          "celulas_em_que_tem_o_primeiro_ano": 0,
+          "celulas_so_nesta_fonte": 0
+        },
+        "GBIF": {
+          "celulas_com_registro": 58,
+          "celulas_em_que_tem_o_primeiro_ano": 33,
+          "celulas_so_nesta_fonte": 6
+        },
+        "OBIS": {
+          "celulas_com_registro": 80,
+          "celulas_em_que_tem_o_primeiro_ano": 67,
+          "celulas_so_nesta_fonte": 28
+        }
+      },
+      "area_e_frente": [
+        {
+          "ano": 1991,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1992,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1993,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1994,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1995,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1996,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1997,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1998,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 1999,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 2000,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 2001,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 2002,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 2003,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 2004,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 2005,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 2006,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 2007,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 2008,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 2009,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 2010,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 2011,
+          "celulas_com_registro": 0,
+          "frente_km": null,
+          "novas_celulas": 0
+        },
+        {
+          "ano": 2012,
+          "celulas_com_registro": 1,
+          "frente_km": 246.3557580548,
+          "novas_celulas": 1
+        },
+        {
+          "ano": 2013,
+          "celulas_com_registro": 3,
+          "frente_km": 712.1095235361,
+          "novas_celulas": 2
+        },
+        {
+          "ano": 2014,
+          "celulas_com_registro": 11,
+          "frente_km": 757.8795325839,
+          "novas_celulas": 8
+        },
+        {
+          "ano": 2015,
+          "celulas_com_registro": 19,
+          "frente_km": 2399.928098745,
+          "novas_celulas": 8
+        },
+        {
+          "ano": 2016,
+          "celulas_com_registro": 27,
+          "frente_km": 2399.928098745,
+          "novas_celulas": 8
+        },
+        {
+          "ano": 2017,
+          "celulas_com_registro": 34,
+          "frente_km": 3080.6140023203,
+          "novas_celulas": 7
+        },
+        {
+          "ano": 2018,
+          "celulas_com_registro": 39,
+          "frente_km": 3080.6140023203,
+          "novas_celulas": 5
+        },
+        {
+          "ano": 2019,
+          "celulas_com_registro": 57,
+          "frente_km": 3080.6140023203,
+          "novas_celulas": 18
+        },
+        {
+          "ano": 2020,
+          "celulas_com_registro": 69,
+          "frente_km": 3080.6140023203,
+          "novas_celulas": 12
+        },
+        {
+          "ano": 2021,
+          "celulas_com_registro": 74,
+          "frente_km": 3080.6140023203,
+          "novas_celulas": 5
+        },
+        {
+          "ano": 2022,
+          "celulas_com_registro": 75,
+          "frente_km": 3080.6140023203,
+          "novas_celulas": 1
+        },
+        {
+          "ano": 2023,
+          "celulas_com_registro": 78,
+          "frente_km": 3080.6140023203,
+          "novas_celulas": 3
+        },
+        {
+          "ano": 2024,
+          "celulas_com_registro": 85,
+          "frente_km": 3080.6140023203,
+          "novas_celulas": 7
+        },
+        {
+          "ano": 2025,
+          "celulas_com_registro": 86,
+          "frente_km": 3080.6140023203,
+          "novas_celulas": 1
+        }
+      ]
+    }
+  },
+  "cronologia": [
+    {
+      "marco": "Flórida, costa atlântica (Dania)",
+      "ano_na_literatura": 1985,
+      "fonte": "Schofield 2009",
+      "ano_bruto_nos_dados": 1985,
+      "ano_corroborado_nos_dados": 1990
+    },
+    {
+      "marco": "Bermudas",
+      "ano_na_literatura": 2000,
+      "fonte": "Schofield 2009",
+      "ano_bruto_nos_dados": 2000,
+      "ano_corroborado_nos_dados": 2000
+    },
+    {
+      "marco": "Bahamas",
+      "ano_na_literatura": 2004,
+      "fonte": "Schofield 2009",
+      "ano_bruto_nos_dados": 2004,
+      "ano_corroborado_nos_dados": 2004
+    },
+    {
+      "marco": "Mar do Caribe (Turks e Caicos, Cuba)",
+      "ano_na_literatura": 2007,
+      "fonte": "Schofield 2009",
+      "ano_bruto_nos_dados": 1996,
+      "ano_corroborado_nos_dados": 2007
+    },
+    {
+      "marco": "Golfo do México",
+      "ano_na_literatura": 2009,
+      "fonte": "Schofield 2010",
+      "ano_bruto_nos_dados": 2009,
+      "ano_corroborado_nos_dados": 2009
+    },
+    {
+      "marco": "Venezuela",
+      "ano_na_literatura": 2009,
+      "fonte": "Schofield 2010",
+      "ano_bruto_nos_dados": 2009,
+      "ano_corroborado_nos_dados": 2009
+    },
+    {
+      "marco": "Brasil, registro isolado (Arraial do Cabo)",
+      "ano_na_literatura": 2014,
+      "fonte": "Ferreira et al. 2015",
+      "ano_bruto_nos_dados": 2014,
+      "ano_corroborado_nos_dados": 2014
+    },
+    {
+      "marco": "Brasil, costa norte e Fernando de Noronha",
+      "ano_na_literatura": 2020,
+      "fonte": "Luiz et al. 2021",
+      "ano_bruto_nos_dados": 2020,
+      "ano_corroborado_nos_dados": 2020
+    },
+    {
+      "marco": "Brasil, Ceará e Piauí",
+      "ano_na_literatura": 2022,
+      "fonte": "Soares et al. 2022",
+      "ano_bruto_nos_dados": 2022,
+      "ano_corroborado_nos_dados": 2022
+    },
+    {
+      "marco": "Israel (primeiro do Mediterrâneo)",
+      "ano_na_literatura": 1991,
+      "fonte": "Golani e Sonin 1992",
+      "ano_bruto_nos_dados": 1991,
+      "ano_corroborado_nos_dados": 2014
+    },
+    {
+      "marco": "Líbano",
+      "ano_na_literatura": 2012,
+      "fonte": "Bariche et al. 2013",
+      "ano_bruto_nos_dados": 2012,
+      "ano_corroborado_nos_dados": 2012
+    },
+    {
+      "marco": "Itália (Sicília)",
+      "ano_na_literatura": 2016,
+      "fonte": "Azzurro et al. 2017",
+      "ano_bruto_nos_dados": 2016,
+      "ano_corroborado_nos_dados": 2016
+    },
+    {
+      "marco": "Croácia (Adriático)",
+      "ano_na_literatura": 2021,
+      "fonte": "Dragičević et al. 2021",
+      "ano_bruto_nos_dados": 2021,
+      "ano_corroborado_nos_dados": 2021
+    }
+  ],
+  "registros_que_contradizem": {
+    "atlantico": {
+      "celulas_com_registro_bruto": 254,
+      "celulas_com_registro_corroborado": 248,
+      "celulas_em_que_o_bruto_e_mais_antigo": 5,
+      "celulas_so_com_registro_isolado": 6,
+      "ano_minimo_para_datar": 1985,
+      "celulas_com_registro_bruto_antes_do_ano_minimo": 0,
+      "mais_antigos": [
+        {
+          "celula": "A_N26_W081",
+          "ano_bruto": 1985,
+          "ano_corroborado": 1995
+        },
+        {
+          "celula": "A_N16_W062",
+          "ano_bruto": 1996,
+          "ano_corroborado": 2010
+        },
+        {
+          "celula": "A_N11_W075",
+          "ano_bruto": 2000,
+          "ano_corroborado": 2009
+        },
+        {
+          "celula": "A_N16_W089",
+          "ano_bruto": 2004,
+          "ano_corroborado": 2009
+        },
+        {
+          "celula": "A_N27_W083",
+          "ano_bruto": 2006,
+          "ano_corroborado": 2010
+        },
+        {
+          "celula": "A_N18_W084",
+          "ano_bruto": 2009,
+          "ano_corroborado": null
+        },
+        {
+          "celula": "A_N12_W073",
+          "ano_bruto": 2010,
+          "ano_corroborado": null
+        },
+        {
+          "celula": "A_N19_W093",
+          "ano_bruto": 2012,
+          "ano_corroborado": null
+        }
+      ]
+    },
+    "mediterraneo": {
+      "celulas_com_registro_bruto": 92,
+      "celulas_com_registro_corroborado": 86,
+      "celulas_em_que_o_bruto_e_mais_antigo": 11,
+      "celulas_so_com_registro_isolado": 6,
+      "ano_minimo_para_datar": 2012,
+      "celulas_com_registro_bruto_antes_do_ano_minimo": 14,
+      "mais_antigos": [
+        {
+          "celula": "M_N32_E034",
+          "ano_bruto": 1991,
+          "ano_corroborado": 2015
+        },
+        {
+          "celula": "M_N36_E028",
+          "ano_bruto": 1995,
+          "ano_corroborado": 2014
+        },
+        {
+          "celula": "M_N36_E027",
+          "ano_bruto": 1997,
+          "ano_corroborado": 2016
+        },
+        {
+          "celula": "M_N42_E018",
+          "ano_bruto": 1999,
+          "ano_corroborado": 2024
+        },
+        {
+          "celula": "M_N41_E002",
+          "ano_bruto": 2002,
+          "ano_corroborado": null
+        },
+        {
+          "celula": "M_N36_E030",
+          "ano_bruto": 2005,
+          "ano_corroborado": 2014
+        },
+        {
+          "celula": "M_N36_E026",
+          "ano_bruto": 2008,
+          "ano_corroborado": 2017
+        },
+        {
+          "celula": "M_N39_E022",
+          "ano_bruto": 2008,
+          "ano_corroborado": null
+        }
+      ]
+    }
+  },
+  "velocidade": {
+    "simulacao": [
+      {
+        "cenario": "Detecção perfeita, sem preenchimento",
+        "estimador": "Média: distância contra ano (linha de base)",
+        "velocidade_real": 250.0,
+        "media": 250.0602562949,
+        "erro_relativo": 0.0002410252,
+        "p05": 249.0054197073,
+        "p95": 251.1173846227,
+        "reqm_relativo": 0.0025561939
+      },
+      {
+        "cenario": "Detecção perfeita, sem preenchimento",
+        "estimador": "Média: ano contra distância",
+        "velocidade_real": 250.0,
+        "media": 250.4930789634,
+        "erro_relativo": 0.0019723159,
+        "p05": 249.4358857828,
+        "p95": 251.5428655858,
+        "reqm_relativo": 0.003224062
+      },
+      {
+        "cenario": "Detecção perfeita, sem preenchimento",
+        "estimador": "Média: ano contra distância, com esforço",
+        "velocidade_real": 250.0,
+        "media": 250.4919868594,
+        "erro_relativo": 0.0019679474,
+        "p05": 249.4345046176,
+        "p95": 251.5709285674,
+        "reqm_relativo": 0.0032241072
+      },
+      {
+        "cenario": "Detecção perfeita, sem preenchimento",
+        "estimador": "Frente: quantil 0,90 da distância",
+        "velocidade_real": 250.0,
+        "media": 250.0192955422,
+        "erro_relativo": 7.71822e-05,
+        "p05": 248.8463440297,
+        "p95": 251.2539886951,
+        "reqm_relativo": 0.002941825
+      },
+      {
+        "cenario": "Detecção perfeita, sem preenchimento",
+        "estimador": "Frente: quantil 0,10 do ano",
+        "velocidade_real": 250.0,
+        "media": 250.2532400669,
+        "erro_relativo": 0.0010129603,
+        "p05": 249.1705233853,
+        "p95": 251.3977010769,
+        "reqm_relativo": 0.0030197352
+      },
+      {
+        "cenario": "Detecção perfeita, sem preenchimento",
+        "estimador": "Frente: envelope dos recordes",
+        "velocidade_real": 250.0,
+        "media": 250.0648917672,
+        "erro_relativo": 0.0002595671,
+        "p05": 248.9674553057,
+        "p95": 251.1034723289,
+        "reqm_relativo": 0.0027190754
+      },
+      {
+        "cenario": "Preenchimento atrás da frente",
+        "estimador": "Média: distância contra ano (linha de base)",
+        "velocidade_real": 250.0,
+        "media": 230.7542735439,
+        "erro_relativo": -0.0769829058,
+        "p05": 221.8016410036,
+        "p95": 241.23019016,
+        "reqm_relativo": 0.0807413394
+      },
+      {
+        "cenario": "Preenchimento atrás da frente",
+        "estimador": "Média: ano contra distância",
+        "velocidade_real": 250.0,
+        "media": 269.2176064178,
+        "erro_relativo": 0.0768704257,
+        "p05": 258.6808308873,
+        "p95": 279.9946017665,
+        "reqm_relativo": 0.0808739382
+      },
+      {
+        "cenario": "Preenchimento atrás da frente",
+        "estimador": "Média: ano contra distância, com esforço",
+        "velocidade_real": 250.0,
+        "media": 269.2823692156,
+        "erro_relativo": 0.0771294769,
+        "p05": 258.8695269607,
+        "p95": 279.9564272653,
+        "reqm_relativo": 0.0811097415
+      },
+      {
+        "cenario": "Preenchimento atrás da frente",
+        "estimador": "Frente: quantil 0,90 da distância",
+        "velocidade_real": 250.0,
+        "media": 246.5342722429,
+        "erro_relativo": -0.013862911,
+        "p05": 241.9320011139,
+        "p95": 251.1996325157,
+        "reqm_relativo": 0.0178188679
+      },
+      {
+        "cenario": "Preenchimento atrás da frente",
+        "estimador": "Frente: quantil 0,10 do ano",
+        "velocidade_real": 250.0,
+        "media": 251.9614642207,
+        "erro_relativo": 0.0078458569,
+        "p05": 247.4872213545,
+        "p95": 256.8339565645,
+        "reqm_relativo": 0.0140391571
+      },
+      {
+        "cenario": "Preenchimento atrás da frente",
+        "estimador": "Frente: envelope dos recordes",
+        "velocidade_real": 250.0,
+        "media": 248.7607538391,
+        "erro_relativo": -0.0049569846,
+        "p05": 244.7877535818,
+        "p95": 253.5168722429,
+        "reqm_relativo": 0.0120952584
+      },
+      {
+        "cenario": "Preenchimento e detecção imperfeita",
+        "estimador": "Média: distância contra ano (linha de base)",
+        "velocidade_real": 250.0,
+        "media": 211.4416461923,
+        "erro_relativo": -0.1542334152,
+        "p05": 197.0882738352,
+        "p95": 226.247870151,
+        "reqm_relativo": 0.1584305045
+      },
+      {
+        "cenario": "Preenchimento e detecção imperfeita",
+        "estimador": "Média: ano contra distância",
+        "velocidade_real": 250.0,
+        "media": 294.4268681215,
+        "erro_relativo": 0.1777074725,
+        "p05": 275.6250249376,
+        "p95": 316.2561039303,
+        "reqm_relativo": 0.1844261658
+      },
+      {
+        "cenario": "Preenchimento e detecção imperfeita",
+        "estimador": "Média: ano contra distância, com esforço",
+        "velocidade_real": 250.0,
+        "media": 289.0775646522,
+        "erro_relativo": 0.1563102586,
+        "p05": 273.1177533847,
+        "p95": 307.6435141616,
+        "reqm_relativo": 0.1624959696
+      },
+      {
+        "cenario": "Preenchimento e detecção imperfeita",
+        "estimador": "Frente: quantil 0,90 da distância",
+        "velocidade_real": 250.0,
+        "media": 243.1277465116,
+        "erro_relativo": -0.027489014,
+        "p05": 234.6357368676,
+        "p95": 251.0603371114,
+        "reqm_relativo": 0.0331355591
+      },
+      {
+        "cenario": "Preenchimento e detecção imperfeita",
+        "estimador": "Frente: quantil 0,10 do ano",
+        "velocidade_real": 250.0,
+        "media": 256.2026519564,
+        "erro_relativo": 0.0248106078,
+        "p05": 248.3116052687,
+        "p95": 264.8318569441,
+        "reqm_relativo": 0.0324284244
+      },
+      {
+        "cenario": "Preenchimento e detecção imperfeita",
+        "estimador": "Frente: envelope dos recordes",
+        "velocidade_real": 250.0,
+        "media": 248.9085105843,
+        "erro_relativo": -0.0043659577,
+        "p05": 241.7291783662,
+        "p95": 256.02346816,
+        "reqm_relativo": 0.0185064281
+      },
+      {
+        "cenario": "Idem, com menos esforço longe da origem",
+        "estimador": "Média: distância contra ano (linha de base)",
+        "velocidade_real": 250.0,
+        "media": 172.0262332164,
+        "erro_relativo": -0.3118950671,
+        "p05": 152.7344736585,
+        "p95": 189.2890007287,
+        "reqm_relativo": 0.3152044892
+      },
+      {
+        "cenario": "Idem, com menos esforço longe da origem",
+        "estimador": "Média: ano contra distância",
+        "velocidade_real": 250.0,
+        "media": 278.6777354809,
+        "erro_relativo": 0.1147109419,
+        "p05": 256.1080795843,
+        "p95": 306.6527255838,
+        "reqm_relativo": 0.1297912059
+      },
+      {
+        "cenario": "Idem, com menos esforço longe da origem",
+        "estimador": "Média: ano contra distância, com esforço",
+        "velocidade_real": 250.0,
+        "media": 319.2127005331,
+        "erro_relativo": 0.2768508021,
+        "p05": 286.1926343579,
+        "p95": 363.0358202187,
+        "reqm_relativo": 0.292298103
+      },
+      {
+        "cenario": "Idem, com menos esforço longe da origem",
+        "estimador": "Frente: quantil 0,90 da distância",
+        "velocidade_real": 250.0,
+        "media": 225.7702430945,
+        "erro_relativo": -0.0969190276,
+        "p05": 212.2441190189,
+        "p95": 238.3614007424,
+        "reqm_relativo": 0.1025283933
+      },
+      {
+        "cenario": "Idem, com menos esforço longe da origem",
+        "estimador": "Frente: quantil 0,10 do ano",
+        "velocidade_real": 250.0,
+        "media": 249.5055072104,
+        "erro_relativo": -0.0019779712,
+        "p05": 237.0196315908,
+        "p95": 263.8611988958,
+        "reqm_relativo": 0.0317352859
+      },
+      {
+        "cenario": "Idem, com menos esforço longe da origem",
+        "estimador": "Frente: envelope dos recordes",
+        "velocidade_real": 250.0,
+        "media": 238.2561366421,
+        "erro_relativo": -0.0469754534,
+        "p05": 225.9690668828,
+        "p95": 249.3721240522,
+        "reqm_relativo": 0.0555924602
+      }
+    ],
+    "dados_reais": {
+      "atlantico": {
+        "Média: distância contra ano (linha de base)": {
+          "km_por_ano": 186.4833588622,
+          "inferior": 143.0632980147,
+          "superior": 229.5738441948,
+          "celulas": 214
+        },
+        "Média: ano contra distância": {
+          "km_por_ano": 392.6931166917,
+          "inferior": 352.7878887653,
+          "superior": 446.0148972871,
+          "celulas": 214
+        },
+        "Média: ano contra distância, com esforço": {
+          "km_por_ano": 391.8496383574,
+          "inferior": 352.1882363321,
+          "superior": 442.1830780886,
+          "celulas": 214
+        },
+        "Frente: quantil 0,90 da distância": {
+          "km_por_ano": 308.5648879873,
+          "inferior": 267.435655887,
+          "superior": 324.997321814,
+          "celulas": 214
+        },
+        "Frente: quantil 0,10 do ano": {
+          "km_por_ano": 406.3638625409,
+          "inferior": 373.0993500081,
+          "superior": 593.5736418156,
+          "celulas": 214
+        },
+        "Frente: envelope dos recordes": {
+          "km_por_ano": 322.6938738326,
+          "inferior": 284.0942531744,
+          "superior": 376.2296055536,
+          "celulas": 214
+        }
+      },
+      "mediterraneo": {
+        "Média: distância contra ano (linha de base)": {
+          "km_por_ano": 123.593221895,
+          "inferior": 87.115929474,
+          "superior": 154.731541065,
+          "celulas": 85
+        },
+        "Média: ano contra distância": {
+          "km_por_ano": 353.3727705554,
+          "inferior": 245.3245005449,
+          "superior": 568.8918981667,
+          "celulas": 85
+        },
+        "Média: ano contra distância, com esforço": {
+          "km_por_ano": 308.5002563775,
+          "inferior": 222.6151645451,
+          "superior": 497.7399619905,
+          "celulas": 85
+        },
+        "Frente: quantil 0,90 da distância": {
+          "km_por_ano": 83.3470095408,
+          "inferior": -25.9283542608,
+          "superior": 184.3838270021,
+          "celulas": 85
+        },
+        "Frente: quantil 0,10 do ano": {
+          "km_por_ano": 886.4254979857,
+          "inferior": 251.8603791248,
+          "superior": 1983.0467706085,
+          "celulas": 85
+        },
+        "Frente: envelope dos recordes": {
+          "km_por_ano": 653.3442530606,
+          "inferior": 138.7322384682,
+          "superior": 1054.0378781316,
+          "celulas": 85
+        }
+      }
+    },
+    "esforco_e_atraso": {
+      "atlantico": {
+        "celulas": 214,
+        "correlacao_esforco_distancia": 0.19973247987213189,
+        "p_esforco_distancia": 0.003342513059383318,
+        "correlacao_esforco_atraso": 0.045351834196391806,
+        "p_esforco_atraso": 0.5093217944217278,
+        "atraso_mediano_pouco_esforco_anos": 1.9889440496401676,
+        "atraso_mediano_muito_esforco_anos": 3.04273145027787,
+        "esforco_mediano": 2.6666666666666665
+      },
+      "mediterraneo": {
+        "celulas": 85,
+        "correlacao_esforco_distancia": 0.4896222981647282,
+        "p_esforco_distancia": 1.979046115029605e-06,
+        "correlacao_esforco_atraso": 0.08239197627112531,
+        "p_esforco_atraso": 0.45346841724174314,
+        "atraso_mediano_pouco_esforco_anos": 3.1795582900356294,
+        "atraso_mediano_muito_esforco_anos": 3.9317968955178912,
+        "esforco_mediano": 2.6666666666666665
+      }
+    }
+  },
+  "validacao": {
+    "atlantico_2010": {
+      "corte": 2010,
+      "celulas_com_registro_no_corte": 148,
+      "celulas_alvo": 469,
+      "parametros": {
+        "modelo": {
+          "alcance_km": 306.64944716028896,
+          "alcance_km_ic": [
+            254.96358495028707,
+            368.8129952441861
+          ],
+          "elasticidade_esforco": 0.013597436851314475,
+          "elasticidade_esforco_ic": [
+            -0.0432311018818234,
+            0.07042597558445235
+          ],
+          "contagio": 0.12492263803893745,
+          "fundo": 2.061153622438558e-09,
+          "log_verossimilhanca": -428.7648784098167,
+          "aic": 871.5297568196333,
+          "parametros": 7,
+          "eventos": 142,
+          "celulas_ano_em_risco": 5766,
+          "suscetivel_constante": -1.4867559594827635,
+          "suscetivel_inclinacao_do_habitat": 0.49598788279513606,
+          "suscetivel_inclinacao_do_habitat_ic": [
+            0.3186700245653558,
+            0.6733057410249164
+          ],
+          "limite_termico_c": 7.054350912197998,
+          "limite_termico_c_ic": [
+            5.5797109183764215,
+            8.528990906019574
+          ],
+          "celulas_sem_registro": 469,
+          "suscetiveis_esperadas_entre_as_sem_registro": 162.78861345995827
+        },
+        "modelo_sem_temperatura": {
+          "alcance_km": 314.7129418428956,
+          "alcance_km_ic": [
+            259.9225012469886,
+            381.05294958397644
+          ],
+          "elasticidade_esforco": 0.014556502201033392,
+          "elasticidade_esforco_ic": [
+            -0.044187677512493154,
+            0.07330068191455993
+          ],
+          "contagio": 0.11140465592741748,
+          "fundo": 2.061153622438558e-09,
+          "log_verossimilhanca": -446.7785749105517,
+          "aic": 905.5571498211034,
+          "parametros": 6,
+          "eventos": 142,
+          "celulas_ano_em_risco": 5766,
+          "suscetivel_constante": -1.39730358989039,
+          "suscetivel_inclinacao_do_habitat": 0.38911941289375135,
+          "suscetivel_inclinacao_do_habitat_ic": [
+            0.24351713930071062,
+            0.5347216864867921
+          ],
+          "celulas_sem_registro": 469,
+          "suscetiveis_esperadas_entre_as_sem_registro": 166.7710502630568
+        },
+        "modelo_sem_fracao_suscetivel": {
+          "alcance_km": 469.5494923265718,
+          "alcance_km_ic": [
+            381.49681647597095,
+            577.9254667988253
+          ],
+          "elasticidade_esforco": 0.1610558737258532,
+          "elasticidade_esforco_ic": [
+            0.10614359645257276,
+            0.21596815099913363
+          ],
+          "contagio": 0.013561991103749197,
+          "fundo": 2.061153622438558e-09,
+          "log_verossimilhanca": -473.8271189261329,
+          "aic": 955.6542378522659,
+          "parametros": 4,
+          "eventos": 142,
+          "celulas_ano_em_risco": 5766
+        }
+      },
+      "velocidade_media_historica_km_ano": 249.67686187326416,
+      "horizontes": {
+        "5": {
+          "ate": 2015,
+          "celulas_alvo": 469,
+          "colonizadas": 67,
+          "modelo": {
+            "auc": 0.8374359545555803,
+            "auc_ic": [
+              0.7722011045622768,
+              0.8923469086095175
+            ],
+            "brier": 0.09466089641080314,
+            "previstas": 79.3725,
+            "calibracao": [
+              {
+                "faixa": "0% a 10%",
+                "celulas": 290,
+                "previsto": 0.010100574712643678,
+                "observado": 0.05517241379310345
+              },
+              {
+                "faixa": "10% a 30%",
+                "celulas": 63,
+                "previsto": 0.17657407407407408,
+                "observado": 0.07936507936507936
+              },
+              {
+                "faixa": "30% a 60%",
+                "celulas": 65,
+                "previsto": 0.44734615384615384,
+                "observado": 0.2
+              },
+              {
+                "faixa": "60% a 100%",
+                "celulas": 51,
+                "previsto": 0.7106209150326798,
+                "observado": 0.6470588235294118
+              }
+            ]
+          },
+          "modelo_sem_temperatura": {
+            "auc": 0.806397118883196,
+            "auc_ic": [
+              0.7391045860545066,
+              0.8689973669354725
+            ],
+            "brier": 0.09682432409381662,
+            "previstas": 78.832,
+            "calibracao": [
+              {
+                "faixa": "0% a 10%",
+                "celulas": 256,
+                "previsto": 0.012921875,
+                "observado": 0.0703125
+              },
+              {
+                "faixa": "10% a 30%",
+                "celulas": 101,
+                "previsto": 0.1974257425742574,
+                "observado": 0.039603960396039604
+              },
+              {
+                "faixa": "30% a 60%",
+                "celulas": 89,
+                "previsto": 0.44044943820224713,
+                "observado": 0.2808988764044944
+              },
+              {
+                "faixa": "60% a 100%",
+                "celulas": 23,
+                "previsto": 0.7123478260869566,
+                "observado": 0.8695652173913043
+              }
+            ]
+          },
+          "modelo_sem_fracao_suscetivel": {
+            "auc": 0.8272629390361624,
+            "auc_ic": [
+              0.7743864794088104,
+              0.8708936458935512
+            ],
+            "brier": 0.1830554285714286,
+            "previstas": 165.946,
+            "calibracao": [
+              {
+                "faixa": "0% a 10%",
+                "celulas": 201,
+                "previsto": 0.011661691542288556,
+                "observado": 0.009950248756218905
+              },
+              {
+                "faixa": "10% a 30%",
+                "celulas": 35,
+                "previsto": 0.20314285714285715,
+                "observado": 0.0
+              },
+              {
+                "faixa": "30% a 60%",
+                "celulas": 83,
+                "previsto": 0.4755180722891566,
+                "observado": 0.21686746987951808
+              },
+              {
+                "faixa": "60% a 100%",
+                "celulas": 150,
+                "previsto": 0.78016,
+                "observado": 0.31333333333333335
+              }
+            ]
+          },
+          "velocidade_constante": {
+            "auc": 0.7579267839904953,
+            "auc_ic": [
+              0.7220803102379657,
+              0.7900324075147188
+            ],
+            "brier": 0.47121535181236673,
+            "previstas": 284.0
+          },
+          "vizinha": {
+            "auc": 0.8398121333630356,
+            "auc_ic": [
+              0.7942910195876596,
+              0.8774931576375723
+            ],
+            "brier": 0.2835820895522388,
+            "previstas": 192.0
+          }
+        },
+        "10": {
+          "ate": 2020,
+          "celulas_alvo": 469,
+          "colonizadas": 79,
+          "modelo": {
+            "auc": 0.8113599480688088,
+            "auc_ic": [
+              0.7404368870043138,
+              0.8636461595480582
+            ],
+            "brier": 0.11549292673537077,
+            "previstas": 95.47583333333334,
+            "calibracao": [
+              {
+                "faixa": "0% a 10%",
+                "celulas": 264,
+                "previsto": 0.01435921717171717,
+                "observado": 0.06818181818181818
+              },
+              {
+                "faixa": "10% a 30%",
+                "celulas": 71,
+                "previsto": 0.17515258215962443,
+                "observado": 0.11267605633802817
+              },
+              {
+                "faixa": "30% a 60%",
+                "celulas": 71,
+                "previsto": 0.46039906103286377,
+                "observado": 0.18309859154929578
+              },
+              {
+                "faixa": "60% a 100%",
+                "celulas": 63,
+                "previsto": 0.7390608465608466,
+                "observado": 0.6349206349206349
+              }
+            ]
+          },
+          "modelo_sem_temperatura": {
+            "auc": 0.7651736449204803,
+            "auc_ic": [
+              0.6898275945695551,
+              0.8304815223246808
+            ],
+            "brier": 0.12553634115138593,
+            "previstas": 99.57600000000001,
+            "calibracao": [
+              {
+                "faixa": "0% a 10%",
+                "celulas": 233,
+                "previsto": 0.018841201716738195,
+                "observado": 0.09012875536480687
+              },
+              {
+                "faixa": "10% a 30%",
+                "celulas": 80,
+                "previsto": 0.1835,
+                "observado": 0.075
+              },
+              {
+                "faixa": "30% a 60%",
+                "celulas": 116,
+                "previsto": 0.4438793103448275,
+                "observado": 0.21551724137931033
+              },
+              {
+                "faixa": "60% a 100%",
+                "celulas": 40,
+                "previsto": 0.7254,
+                "observado": 0.675
+              }
+            ]
+          },
+          "modelo_sem_fracao_suscetivel": {
+            "auc": 0.8215839013307368,
+            "auc_ic": [
+              0.76831046220606,
+              0.8633345894088339
+            ],
+            "brier": 0.33386074200426435,
+            "previstas": 249.84400000000005,
+            "calibracao": [
+              {
+                "faixa": "0% a 10%",
+                "celulas": 151,
+                "previsto": 0.008966887417218546,
+                "observado": 0.019867549668874173
+              },
+              {
+                "faixa": "10% a 30%",
+                "celulas": 41,
+                "previsto": 0.1757560975609756,
+                "observado": 0.04878048780487805
+              },
+              {
+                "faixa": "30% a 60%",
+                "celulas": 28,
+                "previsto": 0.4482142857142856,
+                "observado": 0.0
+              },
+              {
+                "faixa": "60% a 100%",
+                "celulas": 249,
+                "previsto": 0.9186104417670683,
+                "observado": 0.2971887550200803
+              }
+            ]
+          },
+          "velocidade_constante": {
+            "auc": 0.7507627393703343,
+            "auc_ic": [
+              0.710464641920343,
+              0.7868645640074211
+            ],
+            "brier": 0.5266524520255863,
+            "previstas": 320.0
+          },
+          "vizinha": {
+            "auc": 0.8246510873093151,
+            "auc_ic": [
+              0.7742010921051521,
+              0.8609780894962812
+            ],
+            "brier": 0.3411513859275053,
+            "previstas": 227.0
+          }
+        }
+      },
+      "erro_no_ano": {
+        "celulas": 100,
+        "modelo": {
+          "erro_absoluto_medio": 4.08,
+          "vies": 0.98
+        },
+        "modelo_sem_temperatura": {
+          "erro_absoluto_medio": 4.14,
+          "vies": 1.08
+        },
+        "modelo_sem_fracao_suscetivel": {
+          "erro_absoluto_medio": 2.64,
+          "vies": 0.62
+        },
+        "velocidade_constante": {
+          "erro_absoluto_medio": 2.79,
+          "vies": -1.93
+        },
+        "vizinha": {
+          "erro_absoluto_medio": 2.77,
+          "vies": -0.65
+        }
+      },
+      "curvas": [
+        {
+          "ano": 2010,
+          "observado_celulas": 148,
+          "velocidade_constante_celulas": 148,
+          "vizinha_celulas": 148,
+          "observado_frente_km": 2457.004239583741,
+          "velocidade_constante_frente_km": 2457.004239583741,
+          "modelo_celulas": 148.0,
+          "modelo_celulas_p05": 148.0,
+          "modelo_celulas_p95": 148.0,
+          "modelo_frente_km": 2457.004239583741,
+          "modelo_frente_km_p05": 2457.004239583741,
+          "modelo_frente_km_p95": 2457.004239583741,
+          "modelo_sem_temperatura_celulas": 148.0,
+          "modelo_sem_temperatura_celulas_p05": 148.0,
+          "modelo_sem_temperatura_celulas_p95": 148.0,
+          "modelo_sem_fracao_suscetivel_celulas": 148.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 148.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 148.0
+        },
+        {
+          "ano": 2011,
+          "observado_celulas": 179,
+          "velocidade_constante_celulas": 390,
+          "vizinha_celulas": 233,
+          "observado_frente_km": 2621.5225570855414,
+          "velocidade_constante_frente_km": 2652.4846499808928,
+          "modelo_celulas": 172.0,
+          "modelo_celulas_p05": 165.0,
+          "modelo_celulas_p95": 181.0,
+          "modelo_frente_km": 2734.763976954536,
+          "modelo_frente_km_p05": 2457.004239583741,
+          "modelo_frente_km_p95": 3714.094703463756,
+          "modelo_sem_temperatura_celulas": 170.0,
+          "modelo_sem_temperatura_celulas_p05": 162.0,
+          "modelo_sem_temperatura_celulas_p95": 177.0,
+          "modelo_sem_fracao_suscetivel_celulas": 183.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 175.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 193.04999999999995
+        },
+        {
+          "ano": 2012,
+          "observado_celulas": 193,
+          "velocidade_constante_celulas": 400,
+          "vizinha_celulas": 291,
+          "observado_frente_km": 2734.763976954536,
+          "velocidade_constante_frente_km": 2905.1973568744243,
+          "modelo_celulas": 193.0,
+          "modelo_celulas_p05": 181.0,
+          "modelo_celulas_p95": 205.04999999999995,
+          "modelo_frente_km": 3118.0805480026206,
+          "modelo_frente_km_p05": 2621.5225570855414,
+          "modelo_frente_km_p95": 4035.1451437727924,
+          "modelo_sem_temperatura_celulas": 189.0,
+          "modelo_sem_temperatura_celulas_p05": 178.0,
+          "modelo_sem_temperatura_celulas_p95": 200.04999999999995,
+          "modelo_sem_fracao_suscetivel_celulas": 219.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 208.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 235.0
+        },
+        {
+          "ano": 2013,
+          "observado_celulas": 206,
+          "velocidade_constante_celulas": 406,
+          "vizinha_celulas": 311,
+          "observado_frente_km": 2734.763976954536,
+          "velocidade_constante_frente_km": 3197.695734207544,
+          "modelo_celulas": 209.0,
+          "modelo_celulas_p05": 194.0,
+          "modelo_celulas_p95": 224.0,
+          "modelo_frente_km": 3413.56498140039,
+          "modelo_frente_km_p05": 2734.763976954536,
+          "modelo_frente_km_p95": 4442.039682732624,
+          "modelo_sem_temperatura_celulas": 205.0,
+          "modelo_sem_temperatura_celulas_p05": 190.95,
+          "modelo_sem_temperatura_celulas_p95": 221.0,
+          "modelo_sem_fracao_suscetivel_celulas": 254.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 238.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 273.0
+        },
+        {
+          "ano": 2014,
+          "observado_celulas": 214,
+          "velocidade_constante_celulas": 418,
+          "vizinha_celulas": 326,
+          "observado_frente_km": 2734.763976954536,
+          "velocidade_constante_frente_km": 3445.9749647748044,
+          "modelo_celulas": 220.0,
+          "modelo_celulas_p05": 204.0,
+          "modelo_celulas_p95": 236.0,
+          "modelo_frente_km": 3704.0832356430915,
+          "modelo_frente_km_p05": 2856.358628778237,
+          "modelo_frente_km_p95": 4729.541705333057,
+          "modelo_sem_temperatura_celulas": 217.0,
+          "modelo_sem_temperatura_celulas_p05": 202.0,
+          "modelo_sem_temperatura_celulas_p95": 235.0,
+          "modelo_sem_fracao_suscetivel_celulas": 287.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 268.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 308.04999999999995
+        },
+        {
+          "ano": 2015,
+          "observado_celulas": 215,
+          "velocidade_constante_celulas": 432,
+          "vizinha_celulas": 340,
+          "observado_frente_km": 2734.763976954536,
+          "velocidade_constante_frente_km": 3704.6802687602553,
+          "modelo_celulas": 227.0,
+          "modelo_celulas_p05": 211.0,
+          "modelo_celulas_p95": 244.0,
+          "modelo_frente_km": 3866.069804519422,
+          "modelo_frente_km_p05": 3118.0805480026206,
+          "modelo_frente_km_p95": 4873.2086552594865,
+          "modelo_sem_temperatura_celulas": 226.0,
+          "modelo_sem_temperatura_celulas_p05": 209.0,
+          "modelo_sem_temperatura_celulas_p95": 246.04999999999995,
+          "modelo_sem_fracao_suscetivel_celulas": 314.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 294.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 336.0
+        },
+        {
+          "ano": 2016,
+          "observado_celulas": 222,
+          "velocidade_constante_celulas": 438,
+          "vizinha_celulas": 345,
+          "observado_frente_km": 2734.763976954536,
+          "velocidade_constante_frente_km": 3898.6737877781534,
+          "modelo_celulas": 232.0,
+          "modelo_celulas_p05": 215.0,
+          "modelo_celulas_p95": 250.0,
+          "modelo_frente_km": 3976.438822822532,
+          "modelo_frente_km_p05": 3259.63023978896,
+          "modelo_frente_km_p95": 5178.080598761017,
+          "modelo_sem_temperatura_celulas": 232.0,
+          "modelo_sem_temperatura_celulas_p05": 214.95,
+          "modelo_sem_temperatura_celulas_p95": 255.0,
+          "modelo_sem_fracao_suscetivel_celulas": 336.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 315.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 358.0
+        },
+        {
+          "ano": 2017,
+          "observado_celulas": 223,
+          "velocidade_constante_celulas": 444,
+          "vizinha_celulas": 350,
+          "observado_frente_km": 2734.763976954536,
+          "velocidade_constante_frente_km": 4184.164279650339,
+          "modelo_celulas": 235.0,
+          "modelo_celulas_p05": 218.0,
+          "modelo_celulas_p95": 254.0,
+          "modelo_frente_km": 4278.931663072055,
+          "modelo_frente_km_p05": 3413.56498140039,
+          "modelo_frente_km_p95": 5336.280878290968,
+          "modelo_sem_temperatura_celulas": 237.0,
+          "modelo_sem_temperatura_celulas_p05": 219.0,
+          "modelo_sem_temperatura_celulas_p95": 261.0,
+          "modelo_sem_fracao_suscetivel_celulas": 356.5,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 337.95,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 376.0
+        },
+        {
+          "ano": 2018,
+          "observado_celulas": 224,
+          "velocidade_constante_celulas": 452,
+          "vizinha_celulas": 356,
+          "observado_frente_km": 2734.763976954536,
+          "velocidade_constante_frente_km": 4449.612412924998,
+          "modelo_celulas": 238.5,
+          "modelo_celulas_p05": 220.0,
+          "modelo_celulas_p95": 258.0,
+          "modelo_frente_km": 4499.30533419752,
+          "modelo_frente_km_p05": 3603.510833991567,
+          "modelo_frente_km_p95": 5528.403705652211,
+          "modelo_sem_temperatura_celulas": 241.0,
+          "modelo_sem_temperatura_celulas_p05": 222.0,
+          "modelo_sem_temperatura_celulas_p95": 265.0,
+          "modelo_sem_fracao_suscetivel_celulas": 373.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 354.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 392.0
+        },
+        {
+          "ano": 2019,
+          "observado_celulas": 224,
+          "velocidade_constante_celulas": 460,
+          "vizinha_celulas": 367,
+          "observado_frente_km": 2734.763976954536,
+          "velocidade_constante_frente_km": 4665.165960180311,
+          "modelo_celulas": 241.0,
+          "modelo_celulas_p05": 222.0,
+          "modelo_celulas_p95": 261.0,
+          "modelo_frente_km": 4665.165960180311,
+          "modelo_frente_km_p05": 3704.6802687602553,
+          "modelo_frente_km_p95": 5757.138670288112,
+          "modelo_sem_temperatura_celulas": 244.0,
+          "modelo_sem_temperatura_celulas_p05": 224.95,
+          "modelo_sem_temperatura_celulas_p95": 268.0,
+          "modelo_sem_fracao_suscetivel_celulas": 387.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 368.95,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 406.0
+        },
+        {
+          "ano": 2020,
+          "observado_celulas": 227,
+          "velocidade_constante_celulas": 468,
+          "vizinha_celulas": 375,
+          "observado_frente_km": 6283.3182473902425,
+          "velocidade_constante_frente_km": 4913.741097219659,
+          "modelo_celulas": 243.0,
+          "modelo_celulas_p05": 223.0,
+          "modelo_celulas_p95": 264.0,
+          "modelo_frente_km": 4778.326283500387,
+          "modelo_frente_km_p05": 3826.2934974175637,
+          "modelo_frente_km_p95": 6063.948383842452,
+          "modelo_sem_temperatura_celulas": 246.5,
+          "modelo_sem_temperatura_celulas_p05": 227.95,
+          "modelo_sem_temperatura_celulas_p95": 271.0,
+          "modelo_sem_fracao_suscetivel_celulas": 398.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 380.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 417.0
+        },
+        {
+          "ano": 2021,
+          "observado_celulas": 231,
+          "velocidade_constante_celulas": 475,
+          "vizinha_celulas": 381,
+          "observado_frente_km": 6283.3182473902425,
+          "velocidade_constante_frente_km": 5178.080598761017,
+          "modelo_celulas": 245.5,
+          "modelo_celulas_p05": 225.0,
+          "modelo_celulas_p95": 266.0,
+          "modelo_frente_km": 4960.589474583374,
+          "modelo_frente_km_p05": 3897.043588615217,
+          "modelo_frente_km_p95": 6283.3182473902425,
+          "modelo_sem_temperatura_celulas": 248.0,
+          "modelo_sem_temperatura_celulas_p05": 230.0,
+          "modelo_sem_temperatura_celulas_p95": 273.0,
+          "modelo_sem_fracao_suscetivel_celulas": 407.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 390.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 427.0
+        },
+        {
+          "ano": 2022,
+          "observado_celulas": 241,
+          "velocidade_constante_celulas": 481,
+          "vizinha_celulas": 391,
+          "observado_frente_km": 6283.3182473902425,
+          "velocidade_constante_frente_km": 5449.8524947775495,
+          "modelo_celulas": 247.0,
+          "modelo_celulas_p05": 226.0,
+          "modelo_celulas_p95": 269.0,
+          "modelo_frente_km": 5071.088925642887,
+          "modelo_frente_km_p05": 3976.438822822532,
+          "modelo_frente_km_p95": 6353.4453034923345,
+          "modelo_sem_temperatura_celulas": 250.5,
+          "modelo_sem_temperatura_celulas_p05": 231.95,
+          "modelo_sem_temperatura_celulas_p95": 275.04999999999995,
+          "modelo_sem_fracao_suscetivel_celulas": 416.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 399.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 435.0
+        },
+        {
+          "ano": 2023,
+          "observado_celulas": 245,
+          "velocidade_constante_celulas": 484,
+          "vizinha_celulas": 404,
+          "observado_frente_km": 6476.215978409491,
+          "velocidade_constante_frente_km": 5668.981952968406,
+          "modelo_celulas": 249.0,
+          "modelo_celulas_p05": 228.0,
+          "modelo_celulas_p95": 271.0,
+          "modelo_frente_km": 5205.957487265404,
+          "modelo_frente_km_p05": 4035.1451437727924,
+          "modelo_frente_km_p95": 6619.2691098279065,
+          "modelo_sem_temperatura_celulas": 252.0,
+          "modelo_sem_temperatura_celulas_p05": 233.0,
+          "modelo_sem_temperatura_celulas_p95": 277.0,
+          "modelo_sem_fracao_suscetivel_celulas": 424.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 406.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 444.0
+        },
+        {
+          "ano": 2024,
+          "observado_celulas": 246,
+          "velocidade_constante_celulas": 489,
+          "vizinha_celulas": 422,
+          "observado_frente_km": 6476.215978409491,
+          "velocidade_constante_frente_km": 5946.672094045895,
+          "modelo_celulas": 250.0,
+          "modelo_celulas_p05": 229.0,
+          "modelo_celulas_p95": 273.0,
+          "modelo_frente_km": 5268.804712025627,
+          "modelo_frente_km_p05": 4129.8665465748845,
+          "modelo_frente_km_p95": 6692.185367289754,
+          "modelo_sem_temperatura_celulas": 254.0,
+          "modelo_sem_temperatura_celulas_p05": 234.0,
+          "modelo_sem_temperatura_celulas_p95": 279.0,
+          "modelo_sem_fracao_suscetivel_celulas": 431.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 412.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 451.04999999999995
+        },
+        {
+          "ano": 2025,
+          "observado_celulas": 248,
+          "velocidade_constante_celulas": 492,
+          "vizinha_celulas": 439,
+          "observado_frente_km": 6565.3552345954195,
+          "velocidade_constante_frente_km": 6182.806139372574,
+          "modelo_celulas": 252.0,
+          "modelo_celulas_p05": 230.0,
+          "modelo_celulas_p95": 275.0,
+          "modelo_frente_km": 5424.148478768915,
+          "modelo_frente_km_p05": 4342.098267582837,
+          "modelo_frente_km_p95": 6930.545696803177,
+          "modelo_sem_temperatura_celulas": 255.0,
+          "modelo_sem_temperatura_celulas_p05": 235.0,
+          "modelo_sem_temperatura_celulas_p95": 281.04999999999995,
+          "modelo_sem_fracao_suscetivel_celulas": 437.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 418.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 457.0
+        }
+      ],
+      "regioes": {
+        "Costa brasileira": {
+          "celulas_alvo": 122,
+          "celulas_com_registro_ate_o_ano_final": 12,
+          "ano_observado_do_primeiro_registro": 2020,
+          "probabilidade_de_algum_registro_ate_o_ano_final": 0.9741666666666666,
+          "ano_previsto_p05": 2013.0,
+          "ano_mediano_previsto": 2017.0,
+          "ano_previsto_p95": 2024.0,
+          "celulas_previstas_ate_o_ano_final": 11.149166666666666,
+          "ano_velocidade_constante": 2017.0,
+          "ano_vizinha": 2022.0,
+          "probabilidade_ate_o_ano_observado": 0.8466666666666667
+        },
+        "Brasil ao sul de 13°S": {
+          "celulas_alvo": 58,
+          "celulas_com_registro_ate_o_ano_final": 0,
+          "ano_observado_do_primeiro_registro": null,
+          "probabilidade_de_algum_registro_ate_o_ano_final": 0.034166666666666665,
+          "ano_previsto_p05": null,
+          "ano_mediano_previsto": null,
+          "ano_previsto_p95": null,
+          "celulas_previstas_ate_o_ano_final": 0.08333333333333333,
+          "ano_velocidade_constante": 2030.0,
+          "ano_vizinha": 2042.0
+        },
+        "Guianas (Guiana, Suriname, Guiana Francesa)": {
+          "celulas_alvo": 21,
+          "celulas_com_registro_ate_o_ano_final": 4,
+          "ano_observado_do_primeiro_registro": 2021,
+          "probabilidade_de_algum_registro_ate_o_ano_final": 1.0,
+          "ano_previsto_p05": 2011.0,
+          "ano_mediano_previsto": 2012.0,
+          "ano_previsto_p95": 2015.0,
+          "celulas_previstas_ate_o_ano_final": 11.3725,
+          "ano_velocidade_constante": 2013.0,
+          "ano_vizinha": 2015.0,
+          "probabilidade_ate_o_ano_observado": 0.9991666666666666
+        },
+        "EUA ao norte do Cabo Hatteras": {
+          "celulas_alvo": 77,
+          "celulas_com_registro_ate_o_ano_final": 1,
+          "ano_observado_do_primeiro_registro": 2014,
+          "probabilidade_de_algum_registro_ate_o_ano_final": 0.8708333333333333,
+          "ano_previsto_p05": 2011.0,
+          "ano_mediano_previsto": 2012.0,
+          "ano_previsto_p95": null,
+          "celulas_previstas_ate_o_ano_final": 2.8,
+          "ano_velocidade_constante": 2011.0,
+          "ano_vizinha": 2017.0,
+          "probabilidade_ate_o_ano_observado": 0.6941666666666667
+        }
+      }
+    },
+    "atlantico_2018": {
+      "corte": 2018,
+      "celulas_com_registro_no_corte": 224,
+      "celulas_alvo": 393,
+      "parametros": {
+        "modelo": {
+          "alcance_km": 417.5327467344693,
+          "alcance_km_ic": [
+            341.5074875513777,
+            510.4824958468973
+          ],
+          "elasticidade_esforco": 0.11332640664960125,
+          "elasticidade_esforco_ic": [
+            0.0648294101449113,
+            0.16182340315429122
+          ],
+          "contagio": 0.034780717192107145,
+          "fundo": 0.0007711224484070237,
+          "log_verossimilhanca": -696.4462984663901,
+          "aic": 1406.8925969327802,
+          "parametros": 7,
+          "eventos": 218,
+          "celulas_ano_em_risco": 9102,
+          "suscetivel_constante": -2.6787756803551392,
+          "suscetivel_inclinacao_do_habitat": 0.7383225551877789,
+          "suscetivel_inclinacao_do_habitat_ic": [
+            0.5504981436771295,
+            0.9261469666984283
+          ],
+          "limite_termico_c": 6.885319793913045,
+          "limite_termico_c_ic": [
+            5.568089013294088,
+            8.202550574532001
+          ],
+          "celulas_sem_registro": 393,
+          "suscetiveis_esperadas_entre_as_sem_registro": 82.31062986852898
+        },
+        "modelo_sem_temperatura": {
+          "alcance_km": 397.9674870712151,
+          "alcance_km_ic": [
+            328.41758664857474,
+            482.2461622167976
+          ],
+          "elasticidade_esforco": 0.11695703154147179,
+          "elasticidade_esforco_ic": [
+            0.06791321499457009,
+            0.16600084808837348
+          ],
+          "contagio": 0.03573743651247781,
+          "fundo": 0.0007327378360923228,
+          "log_verossimilhanca": -718.3293495231712,
+          "aic": 1448.6586990463425,
+          "parametros": 6,
+          "eventos": 218,
+          "celulas_ano_em_risco": 9102,
+          "suscetivel_constante": -2.3596773942539864,
+          "suscetivel_inclinacao_do_habitat": 0.5982198658678255,
+          "suscetivel_inclinacao_do_habitat_ic": [
+            0.44595854747465025,
+            0.7504811842610007
+          ],
+          "celulas_sem_registro": 393,
+          "suscetiveis_esperadas_entre_as_sem_registro": 94.80897311668213
+        },
+        "modelo_sem_fracao_suscetivel": {
+          "alcance_km": 485.04670448920007,
+          "alcance_km_ic": [
+            396.27504147432535,
+            593.7045761462031
+          ],
+          "elasticidade_esforco": 0.29799339927428675,
+          "elasticidade_esforco_ic": [
+            0.2540448192359647,
+            0.3419419793126088
+          ],
+          "contagio": 0.0052430084369706345,
+          "fundo": 0.0003263164422990818,
+          "log_verossimilhanca": -809.295170915965,
+          "aic": 1626.59034183193,
+          "parametros": 4,
+          "eventos": 218,
+          "celulas_ano_em_risco": 9102
+        }
+      },
+      "velocidade_media_historica_km_ano": 85.52689918506945,
+      "horizontes": {
+        "5": {
+          "ate": 2023,
+          "celulas_alvo": 393,
+          "colonizadas": 21,
+          "modelo": {
+            "auc": 0.7697132616487455,
+            "auc_ic": [
+              0.6935428276775429,
+              0.832354947261621
+            ],
+            "brier": 0.05297292726887193,
+            "previstas": 10.075833333333334,
+            "calibracao": [
+              {
+                "faixa": "0% a 10%",
+                "celulas": 364,
+                "previsto": 0.012511446886446885,
+                "observado": 0.046703296703296704
+              },
+              {
+                "faixa": "10% a 30%",
+                "celulas": 26,
+                "previsto": 0.16211538461538463,
+                "observado": 0.15384615384615385
+              },
+              {
+                "faixa": "30% a 60%",
+                "celulas": 2,
+                "previsto": 0.3304166666666667,
+                "observado": 0.0
+              },
+              {
+                "faixa": "60% a 100%",
+                "celulas": 1,
+                "previsto": 0.6458333333333334,
+                "observado": 0.0
+              }
+            ]
+          },
+          "modelo_sem_temperatura": {
+            "auc": 0.6339605734767025,
+            "auc_ic": [
+              0.5459080479947649,
+              0.7192067378884717
+            ],
+            "brier": 0.0547649058524173,
+            "previstas": 14.024000000000001,
+            "calibracao": [
+              {
+                "faixa": "0% a 10%",
+                "celulas": 339,
+                "previsto": 0.015781710914454277,
+                "observado": 0.058997050147492625
+              },
+              {
+                "faixa": "10% a 30%",
+                "celulas": 52,
+                "previsto": 0.1519230769230769,
+                "observado": 0.019230769230769232
+              },
+              {
+                "faixa": "30% a 60%",
+                "celulas": 2,
+                "previsto": 0.387,
+                "observado": 0.0
+              }
+            ]
+          },
+          "modelo_sem_fracao_suscetivel": {
+            "auc": 0.5234254992319508,
+            "auc_ic": [
+              0.40752303212494245,
+              0.6453192839180605
+            ],
+            "brier": 0.111054737913486,
+            "previstas": 67.772,
+            "calibracao": [
+              {
+                "faixa": "0% a 10%",
+                "celulas": 223,
+                "previsto": 0.0157847533632287,
+                "observado": 0.06278026905829596
+              },
+              {
+                "faixa": "10% a 30%",
+                "celulas": 61,
+                "previsto": 0.20095081967213113,
+                "observado": 0.01639344262295082
+              },
+              {
+                "faixa": "30% a 60%",
+                "celulas": 95,
+                "previsto": 0.4494947368421052,
+                "observado": 0.06315789473684211
+              },
+              {
+                "faixa": "60% a 100%",
+                "celulas": 14,
+                "previsto": 0.6637142857142858,
+                "observado": 0.0
+              }
+            ]
+          },
+          "velocidade_constante": {
+            "auc": 0.49923195084485406,
+            "auc_ic": [
+              0.4011051582243338,
+              0.5946406010808019
+            ],
+            "brier": 0.4860050890585242,
+            "previstas": 182.0
+          },
+          "vizinha": {
+            "auc": 0.5969022017409115,
+            "auc_ic": [
+              0.48013747862045075,
+              0.7081735866301084
+            ],
+            "brier": 0.3384223918575064,
+            "previstas": 126.0
+          }
+        }
+      },
+      "erro_no_ano": {
+        "celulas": 24,
+        "modelo": {
+          "erro_absoluto_medio": 3.25,
+          "vies": 2.3333333333333335
+        },
+        "modelo_sem_temperatura": {
+          "erro_absoluto_medio": 3.375,
+          "vies": 2.4583333333333335
+        },
+        "modelo_sem_fracao_suscetivel": {
+          "erro_absoluto_medio": 2.4583333333333335,
+          "vies": 1.375
+        },
+        "velocidade_constante": {
+          "erro_absoluto_medio": 4.0,
+          "vies": 1.5833333333333333
+        },
+        "vizinha": {
+          "erro_absoluto_medio": 3.75,
+          "vies": 1.4166666666666667
+        }
+      },
+      "curvas": [
+        {
+          "ano": 2018,
+          "observado_celulas": 224,
+          "velocidade_constante_celulas": 224,
+          "vizinha_celulas": 224,
+          "observado_frente_km": 2734.763976954536,
+          "velocidade_constante_frente_km": 2734.763976954536,
+          "modelo_celulas": 224.0,
+          "modelo_celulas_p05": 224.0,
+          "modelo_celulas_p95": 224.0,
+          "modelo_frente_km": 2734.763976954536,
+          "modelo_frente_km_p05": 2734.763976954536,
+          "modelo_frente_km_p95": 2734.763976954536,
+          "modelo_sem_temperatura_celulas": 224.0,
+          "modelo_sem_temperatura_celulas_p05": 224.0,
+          "modelo_sem_temperatura_celulas_p95": 224.0,
+          "modelo_sem_fracao_suscetivel_celulas": 224.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 224.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 224.0
+        },
+        {
+          "ano": 2019,
+          "observado_celulas": 224,
+          "velocidade_constante_celulas": 398,
+          "vizinha_celulas": 296,
+          "observado_frente_km": 2734.763976954536,
+          "velocidade_constante_frente_km": 2793.947046306508,
+          "modelo_celulas": 227.0,
+          "modelo_celulas_p05": 224.0,
+          "modelo_celulas_p95": 230.0,
+          "modelo_frente_km": 2734.763976954536,
+          "modelo_frente_km_p05": 2734.763976954536,
+          "modelo_frente_km_p95": 6283.3182473902425,
+          "modelo_sem_temperatura_celulas": 227.0,
+          "modelo_sem_temperatura_celulas_p05": 225.0,
+          "modelo_sem_temperatura_celulas_p95": 230.0,
+          "modelo_sem_fracao_suscetivel_celulas": 239.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 233.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 245.0
+        },
+        {
+          "ano": 2020,
+          "observado_celulas": 227,
+          "velocidade_constante_celulas": 402,
+          "vizinha_celulas": 333,
+          "observado_frente_km": 6283.3182473902425,
+          "velocidade_constante_frente_km": 2905.1973568744243,
+          "modelo_celulas": 229.0,
+          "modelo_celulas_p05": 226.0,
+          "modelo_celulas_p95": 233.0,
+          "modelo_frente_km": 3379.7312460918706,
+          "modelo_frente_km_p05": 2734.763976954536,
+          "modelo_frente_km_p95": 7941.564774087016,
+          "modelo_sem_temperatura_celulas": 230.0,
+          "modelo_sem_temperatura_celulas_p05": 226.0,
+          "modelo_sem_temperatura_celulas_p95": 235.0,
+          "modelo_sem_fracao_suscetivel_celulas": 254.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 245.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 262.0
+        },
+        {
+          "ano": 2021,
+          "observado_celulas": 231,
+          "velocidade_constante_celulas": 403,
+          "vizinha_celulas": 340,
+          "observado_frente_km": 6283.3182473902425,
+          "velocidade_constante_frente_km": 2966.167035352819,
+          "modelo_celulas": 231.0,
+          "modelo_celulas_p05": 227.0,
+          "modelo_celulas_p95": 236.0,
+          "modelo_frente_km": 3704.0832356430915,
+          "modelo_frente_km_p05": 2734.763976954536,
+          "modelo_frente_km_p95": 9235.676322666295,
+          "modelo_sem_temperatura_celulas": 233.0,
+          "modelo_sem_temperatura_celulas_p05": 228.0,
+          "modelo_sem_temperatura_celulas_p95": 239.0,
+          "modelo_sem_fracao_suscetivel_celulas": 267.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 256.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 278.0
+        },
+        {
+          "ano": 2022,
+          "observado_celulas": 241,
+          "velocidade_constante_celulas": 405,
+          "vizinha_celulas": 345,
+          "observado_frente_km": 6283.3182473902425,
+          "velocidade_constante_frente_km": 3022.1034786670507,
+          "modelo_celulas": 232.0,
+          "modelo_celulas_p05": 228.0,
+          "modelo_celulas_p95": 238.0,
+          "modelo_frente_km": 3962.417457411776,
+          "modelo_frente_km_p05": 2734.763976954536,
+          "modelo_frente_km_p95": 9318.716188241347,
+          "modelo_sem_temperatura_celulas": 235.0,
+          "modelo_sem_temperatura_celulas_p05": 229.0,
+          "modelo_sem_temperatura_celulas_p95": 243.0,
+          "modelo_sem_fracao_suscetivel_celulas": 280.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 268.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 292.0
+        },
+        {
+          "ano": 2023,
+          "observado_celulas": 245,
+          "velocidade_constante_celulas": 406,
+          "vizinha_celulas": 350,
+          "observado_frente_km": 6476.215978409491,
+          "velocidade_constante_frente_km": 3118.0805480026206,
+          "modelo_celulas": 234.0,
+          "modelo_celulas_p05": 229.0,
+          "modelo_celulas_p95": 240.0,
+          "modelo_frente_km": 4035.1451437727924,
+          "modelo_frente_km_p05": 2902.755420469615,
+          "modelo_frente_km_p95": 9504.36578349457,
+          "modelo_sem_temperatura_celulas": 238.0,
+          "modelo_sem_temperatura_celulas_p05": 231.0,
+          "modelo_sem_temperatura_celulas_p95": 247.0,
+          "modelo_sem_fracao_suscetivel_celulas": 292.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 279.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 305.04999999999995
+        },
+        {
+          "ano": 2024,
+          "observado_celulas": 246,
+          "velocidade_constante_celulas": 409,
+          "vizinha_celulas": 354,
+          "observado_frente_km": 6476.215978409491,
+          "velocidade_constante_frente_km": 3222.4450852730956,
+          "modelo_celulas": 235.0,
+          "modelo_celulas_p05": 229.0,
+          "modelo_celulas_p95": 242.0,
+          "modelo_frente_km": 4278.931663072055,
+          "modelo_frente_km_p05": 3181.87696460599,
+          "modelo_frente_km_p95": 9660.12132621271,
+          "modelo_sem_temperatura_celulas": 240.0,
+          "modelo_sem_temperatura_celulas_p05": 232.95,
+          "modelo_sem_temperatura_celulas_p95": 249.0,
+          "modelo_sem_fracao_suscetivel_celulas": 303.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 289.95,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 319.0
+        },
+        {
+          "ano": 2025,
+          "observado_celulas": 248,
+          "velocidade_constante_celulas": 412,
+          "vizinha_celulas": 362,
+          "observado_frente_km": 6565.3552345954195,
+          "velocidade_constante_frente_km": 3259.63023978896,
+          "modelo_celulas": 237.0,
+          "modelo_celulas_p05": 230.0,
+          "modelo_celulas_p95": 245.0,
+          "modelo_frente_km": 4562.1244875754,
+          "modelo_frente_km_p05": 3259.63023978896,
+          "modelo_frente_km_p95": 9916.592501415254,
+          "modelo_sem_temperatura_celulas": 242.0,
+          "modelo_sem_temperatura_celulas_p05": 234.0,
+          "modelo_sem_temperatura_celulas_p95": 253.0,
+          "modelo_sem_fracao_suscetivel_celulas": 313.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 299.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 329.04999999999995
+        }
+      ],
+      "regioes": {
+        "Costa brasileira": {
+          "celulas_alvo": 122,
+          "celulas_com_registro_ate_o_ano_final": 12,
+          "ano_observado_do_primeiro_registro": 2020,
+          "probabilidade_de_algum_registro_ate_o_ano_final": 0.6008333333333333,
+          "ano_previsto_p05": 2019.0,
+          "ano_mediano_previsto": 2024.0,
+          "ano_previsto_p95": null,
+          "celulas_previstas_ate_o_ano_final": 1.7016666666666667,
+          "ano_velocidade_constante": 2035.0,
+          "ano_vizinha": 2028.0,
+          "probabilidade_ate_o_ano_observado": 0.1875
+        },
+        "Brasil ao sul de 13°S": {
+          "celulas_alvo": 58,
+          "celulas_com_registro_ate_o_ano_final": 0,
+          "ano_observado_do_primeiro_registro": null,
+          "probabilidade_de_algum_registro_ate_o_ano_final": 0.22,
+          "ano_previsto_p05": 2020.0,
+          "ano_mediano_previsto": null,
+          "ano_previsto_p95": null,
+          "celulas_previstas_ate_o_ano_final": 0.5225,
+          "ano_velocidade_constante": 2072.0,
+          "ano_vizinha": 2048.0
+        },
+        "Guianas (Guiana, Suriname, Guiana Francesa)": {
+          "celulas_alvo": 21,
+          "celulas_com_registro_ate_o_ano_final": 4,
+          "ano_observado_do_primeiro_registro": 2021,
+          "probabilidade_de_algum_registro_ate_o_ano_final": 0.9408333333333333,
+          "ano_previsto_p05": 2019.0,
+          "ano_mediano_previsto": 2020.0,
+          "ano_previsto_p95": null,
+          "celulas_previstas_ate_o_ano_final": 3.276666666666667,
+          "ano_velocidade_constante": 2023.0,
+          "ano_vizinha": 2021.0,
+          "probabilidade_ate_o_ano_observado": 0.695
+        },
+        "EUA ao norte do Cabo Hatteras": {
+          "celulas_alvo": 76,
+          "celulas_com_registro_ate_o_ano_final": 0,
+          "ano_observado_do_primeiro_registro": null,
+          "probabilidade_de_algum_registro_ate_o_ano_final": 0.655,
+          "ano_previsto_p05": 2019.0,
+          "ano_mediano_previsto": 2022.0,
+          "ano_previsto_p95": null,
+          "celulas_previstas_ate_o_ano_final": 1.2841666666666667,
+          "ano_velocidade_constante": 2019.0,
+          "ano_vizinha": 2025.0
+        }
+      }
+    },
+    "mediterraneo_2018": {
+      "corte": 2018,
+      "celulas_com_registro_no_corte": 39,
+      "celulas_alvo": 198,
+      "parametros": {
+        "modelo": {
+          "alcance_km": 122.9475026996256,
+          "alcance_km_ic": [
+            73.82395387644081,
+            204.75858615449192
+          ],
+          "elasticidade_esforco": 0.05323614749248637,
+          "elasticidade_esforco_ic": [
+            -0.2031485907008437,
+            0.30962088568581647
+          ],
+          "contagio": 0.770854668467037,
+          "fundo": 0.019793047782970332,
+          "log_verossimilhanca": -111.2820594300089,
+          "aic": 236.5641188600178,
+          "parametros": 7,
+          "eventos": 38,
+          "celulas_ano_em_risco": 1327,
+          "suscetivel_constante": -1.2164698364152127,
+          "suscetivel_inclinacao_do_habitat": 1.9680532238012702,
+          "suscetivel_inclinacao_do_habitat_ic": [
+            0.14258817824150216,
+            3.793518269361038
+          ],
+          "limite_termico_c": 15.67124183156042,
+          "limite_termico_c_ic": [
+            14.961084312116538,
+            16.381399351004305
+          ],
+          "celulas_sem_registro": 198,
+          "suscetiveis_esperadas_entre_as_sem_registro": 31.643643330477953
+        },
+        "modelo_sem_temperatura": {
+          "alcance_km": 113.71130001863125,
+          "alcance_km_ic": [
+            73.42542956178849,
+            176.10056664423297
+          ],
+          "elasticidade_esforco": -0.07113876090381585,
+          "elasticidade_esforco_ic": [
+            -0.298484712538057,
+            0.1562071907304253
+          ],
+          "contagio": 0.47894401705590023,
+          "fundo": 0.006356807342217552,
+          "log_verossimilhanca": -122.8071481012496,
+          "aic": 257.6142962024992,
+          "parametros": 6,
+          "eventos": 38,
+          "celulas_ano_em_risco": 1327,
+          "suscetivel_constante": -1.0852680417704372,
+          "suscetivel_inclinacao_do_habitat": 1.5376865096650099,
+          "suscetivel_inclinacao_do_habitat_ic": [
+            -0.15725271692756482,
+            3.2326257362575843
+          ],
+          "celulas_sem_registro": 198,
+          "suscetiveis_esperadas_entre_as_sem_registro": 149.2216396510475
+        },
+        "modelo_sem_fracao_suscetivel": {
+          "alcance_km": 108.2361145886341,
+          "alcance_km_ic": [
+            73.4714275458412,
+            159.45050875640777
+          ],
+          "elasticidade_esforco": 0.054344775471134484,
+          "elasticidade_esforco_ic": [
+            -0.13647937730907445,
+            0.2451689282513434
+          ],
+          "contagio": 0.35097483895309306,
+          "fundo": 0.004193774443664371,
+          "log_verossimilhanca": -125.93026918795809,
+          "aic": 259.8605383759162,
+          "parametros": 4,
+          "eventos": 38,
+          "celulas_ano_em_risco": 1327
+        }
+      },
+      "velocidade_media_historica_km_ano": 160.27800362959653,
+      "horizontes": {
+        "5": {
+          "ate": 2023,
+          "celulas_alvo": 198,
+          "colonizadas": 39,
+          "modelo": {
+            "auc": 0.7775358813094663,
+            "auc_ic": [
+              0.6894917642600352,
+              0.862609925339384
+            ],
+            "brier": 0.1484097537878788,
+            "previstas": 18.045833333333334,
+            "calibracao": [
+              {
+                "faixa": "0% a 10%",
+                "celulas": 139,
+                "previsto": 0.047625899280575534,
+                "observado": 0.09352517985611511
+              },
+              {
+                "faixa": "10% a 30%",
+                "celulas": 51,
+                "previsto": 0.1577777777777778,
+                "observado": 0.4117647058823529
+              },
+              {
+                "faixa": "30% a 60%",
+                "celulas": 8,
+                "previsto": 0.42239583333333336,
+                "observado": 0.625
+              }
+            ]
+          },
+          "modelo_sem_temperatura": {
+            "auc": 0.7904370262860829,
+            "auc_ic": [
+              0.7082998896570499,
+              0.8714564475928113
+            ],
+            "brier": 0.17039567676767675,
+            "previstas": 74.256,
+            "calibracao": [
+              {
+                "faixa": "0% a 10%",
+                "celulas": 17,
+                "previsto": 0.062,
+                "observado": 0.0
+              },
+              {
+                "faixa": "10% a 30%",
+                "celulas": 76,
+                "previsto": 0.1723157894736842,
+                "observado": 0.07894736842105263
+              },
+              {
+                "faixa": "30% a 60%",
+                "celulas": 63,
+                "previsto": 0.4333650793650793,
+                "observado": 0.2222222222222222
+              },
+              {
+                "faixa": "60% a 100%",
+                "celulas": 42,
+                "previsto": 0.7810476190476189,
+                "observado": 0.4523809523809524
+              }
+            ]
+          },
+          "modelo_sem_fracao_suscetivel": {
+            "auc": 0.7871311078858249,
+            "auc_ic": [
+              0.7100348306313398,
+              0.8622622547063972
+            ],
+            "brier": 0.24114044444444446,
+            "previstas": 99.644,
+            "calibracao": [
+              {
+                "faixa": "0% a 10%",
+                "celulas": 9,
+                "previsto": 0.07733333333333332,
+                "observado": 0.0
+              },
+              {
+                "faixa": "10% a 30%",
+                "celulas": 49,
+                "previsto": 0.19685714285714287,
+                "observado": 0.061224489795918366
+              },
+              {
+                "faixa": "30% a 60%",
+                "celulas": 67,
+                "previsto": 0.4394626865671642,
+                "observado": 0.13432835820895522
+              },
+              {
+                "faixa": "60% a 100%",
+                "celulas": 73,
+                "previsto": 0.8199726027397259,
+                "observado": 0.3698630136986301
+              }
+            ]
+          },
+          "velocidade_constante": {
+            "auc": 0.5723270440251572,
+            "auc_ic": [
+              0.5496520242460525,
+              0.607618879080613
+            ],
+            "brier": 0.7929292929292929,
+            "previstas": 196.0
+          },
+          "vizinha": {
+            "auc": 0.7406869859700048,
+            "auc_ic": [
+              0.6614015582827261,
+              0.8180953406179104
+            ],
+            "brier": 0.6515151515151515,
+            "previstas": 166.0
+          }
+        }
+      },
+      "erro_no_ano": {
+        "celulas": 47,
+        "modelo": {
+          "erro_absoluto_medio": 1.553191489361702,
+          "vies": 0.48936170212765956
+        },
+        "modelo_sem_temperatura": {
+          "erro_absoluto_medio": 1.3191489361702127,
+          "vies": 0.723404255319149
+        },
+        "modelo_sem_fracao_suscetivel": {
+          "erro_absoluto_medio": 1.3829787234042554,
+          "vies": 1.0851063829787233
+        },
+        "velocidade_constante": {
+          "erro_absoluto_medio": 1.6595744680851063,
+          "vies": -1.6595744680851063
+        },
+        "vizinha": {
+          "erro_absoluto_medio": 1.1702127659574468,
+          "vies": -0.10638297872340426
+        }
+      },
+      "curvas": [
+        {
+          "ano": 2018,
+          "observado_celulas": 39,
+          "velocidade_constante_celulas": 39,
+          "vizinha_celulas": 39,
+          "observado_frente_km": 3080.614002320319,
+          "velocidade_constante_frente_km": 3080.614002320319,
+          "modelo_celulas": 39.0,
+          "modelo_celulas_p05": 39.0,
+          "modelo_celulas_p95": 39.0,
+          "modelo_frente_km": 3080.614002320319,
+          "modelo_frente_km_p05": 3080.614002320319,
+          "modelo_frente_km_p95": 3080.614002320319,
+          "modelo_sem_temperatura_celulas": 39.0,
+          "modelo_sem_temperatura_celulas_p05": 39.0,
+          "modelo_sem_temperatura_celulas_p95": 39.0,
+          "modelo_sem_fracao_suscetivel_celulas": 39.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 39.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 39.0
+        },
+        {
+          "ano": 2019,
+          "observado_celulas": 57,
+          "velocidade_constante_celulas": 214,
+          "vizinha_celulas": 67,
+          "observado_frente_km": 3080.614002320319,
+          "velocidade_constante_frente_km": 3240.3102988443,
+          "modelo_celulas": 44.0,
+          "modelo_celulas_p05": 40.0,
+          "modelo_celulas_p95": 48.0,
+          "modelo_frente_km": 3080.614002320319,
+          "modelo_frente_km_p05": 3080.614002320319,
+          "modelo_frente_km_p95": 3701.7924028606867,
+          "modelo_sem_temperatura_celulas": 50.0,
+          "modelo_sem_temperatura_celulas_p05": 45.0,
+          "modelo_sem_temperatura_celulas_p95": 56.0,
+          "modelo_sem_fracao_suscetivel_celulas": 52.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 47.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 60.0
+        },
+        {
+          "ano": 2020,
+          "observado_celulas": 69,
+          "velocidade_constante_celulas": 223,
+          "vizinha_celulas": 112,
+          "observado_frente_km": 3080.614002320319,
+          "velocidade_constante_frente_km": 3398.2052820547888,
+          "modelo_celulas": 48.0,
+          "modelo_celulas_p05": 42.0,
+          "modelo_celulas_p95": 55.0,
+          "modelo_frente_km": 3080.614002320319,
+          "modelo_frente_km_p05": 3080.614002320319,
+          "modelo_frente_km_p95": 3837.7312407227696,
+          "modelo_sem_temperatura_celulas": 64.0,
+          "modelo_sem_temperatura_celulas_p05": 52.0,
+          "modelo_sem_temperatura_celulas_p95": 76.04999999999995,
+          "modelo_sem_fracao_suscetivel_celulas": 69.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 59.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 84.0
+        },
+        {
+          "ano": 2021,
+          "observado_celulas": 74,
+          "velocidade_constante_celulas": 228,
+          "vizinha_celulas": 163,
+          "observado_frente_km": 3080.614002320319,
+          "velocidade_constante_frente_km": 3534.7524682922844,
+          "modelo_celulas": 51.0,
+          "modelo_celulas_p05": 44.0,
+          "modelo_celulas_p95": 61.0,
+          "modelo_frente_km": 3080.614002320319,
+          "modelo_frente_km_p05": 3080.614002320319,
+          "modelo_frente_km_p95": 3919.063989946875,
+          "modelo_sem_temperatura_celulas": 81.0,
+          "modelo_sem_temperatura_celulas_p05": 60.0,
+          "modelo_sem_temperatura_celulas_p95": 99.0,
+          "modelo_sem_fracao_suscetivel_celulas": 91.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 72.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 114.04999999999995
+        },
+        {
+          "ano": 2022,
+          "observado_celulas": 75,
+          "velocidade_constante_celulas": 232,
+          "vizinha_celulas": 190,
+          "observado_frente_km": 3080.614002320319,
+          "velocidade_constante_frente_km": 3701.7924028606867,
+          "modelo_celulas": 54.0,
+          "modelo_celulas_p05": 46.0,
+          "modelo_celulas_p95": 65.0,
+          "modelo_frente_km": 3110.3654446269825,
+          "modelo_frente_km_p05": 3080.614002320319,
+          "modelo_frente_km_p95": 3940.068402534824,
+          "modelo_sem_temperatura_celulas": 98.0,
+          "modelo_sem_temperatura_celulas_p05": 70.9,
+          "modelo_sem_temperatura_celulas_p95": 121.0,
+          "modelo_sem_fracao_suscetivel_celulas": 114.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 88.95,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 145.04999999999995
+        },
+        {
+          "ano": 2023,
+          "observado_celulas": 78,
+          "velocidade_constante_celulas": 235,
+          "vizinha_celulas": 205,
+          "observado_frente_km": 3080.614002320319,
+          "velocidade_constante_frente_km": 3837.7312407227696,
+          "modelo_celulas": 56.0,
+          "modelo_celulas_p05": 47.0,
+          "modelo_celulas_p95": 69.0,
+          "modelo_frente_km": 3233.3466245676887,
+          "modelo_frente_km_p05": 3080.614002320319,
+          "modelo_frente_km_p95": 3940.068402534824,
+          "modelo_sem_temperatura_celulas": 114.0,
+          "modelo_sem_temperatura_celulas_p05": 78.0,
+          "modelo_sem_temperatura_celulas_p95": 143.0,
+          "modelo_sem_fracao_suscetivel_celulas": 137.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 107.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 172.0
+        },
+        {
+          "ano": 2024,
+          "observado_celulas": 85,
+          "velocidade_constante_celulas": 237,
+          "vizinha_celulas": 214,
+          "observado_frente_km": 3080.614002320319,
+          "velocidade_constante_frente_km": 3940.068402534824,
+          "modelo_celulas": 58.0,
+          "modelo_celulas_p05": 48.0,
+          "modelo_celulas_p95": 72.04999999999995,
+          "modelo_frente_km": 3357.5855313456236,
+          "modelo_frente_km_p05": 3080.614002320319,
+          "modelo_frente_km_p95": 3940.068402534824,
+          "modelo_sem_temperatura_celulas": 129.0,
+          "modelo_sem_temperatura_celulas_p05": 87.0,
+          "modelo_sem_temperatura_celulas_p95": 159.04999999999995,
+          "modelo_sem_fracao_suscetivel_celulas": 160.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 123.0,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 195.04999999999995
+        },
+        {
+          "ano": 2025,
+          "observado_celulas": 86,
+          "velocidade_constante_celulas": 237,
+          "vizinha_celulas": 225,
+          "observado_frente_km": 3080.614002320319,
+          "velocidade_constante_frente_km": 3940.068402534824,
+          "modelo_celulas": 60.0,
+          "modelo_celulas_p05": 49.0,
+          "modelo_celulas_p95": 75.0,
+          "modelo_frente_km": 3398.2052820547888,
+          "modelo_frente_km_p05": 3080.614002320319,
+          "modelo_frente_km_p95": 3940.068402534824,
+          "modelo_sem_temperatura_celulas": 142.0,
+          "modelo_sem_temperatura_celulas_p05": 94.95,
+          "modelo_sem_temperatura_celulas_p95": 173.04999999999995,
+          "modelo_sem_fracao_suscetivel_celulas": 180.0,
+          "modelo_sem_fracao_suscetivel_celulas_p05": 141.95,
+          "modelo_sem_fracao_suscetivel_celulas_p95": 212.0
+        }
+      ],
+      "regioes": {
+        "Mediterrâneo ocidental (a oeste de 12°L)": {
+          "celulas_alvo": 79,
+          "celulas_com_registro_ate_o_ano_final": 0,
+          "ano_observado_do_primeiro_registro": null,
+          "probabilidade_de_algum_registro_ate_o_ano_final": 0.965,
+          "ano_previsto_p05": 2019.0,
+          "ano_mediano_previsto": 2019.0,
+          "ano_previsto_p95": 2024.0,
+          "celulas_previstas_ate_o_ano_final": 5.7058333333333335,
+          "ano_velocidade_constante": 2019.0,
+          "ano_vizinha": 2019.0
+        },
+        "Adriático": {
+          "celulas_alvo": 32,
+          "celulas_com_registro_ate_o_ano_final": 11,
+          "ano_observado_do_primeiro_registro": 2019,
+          "probabilidade_de_algum_registro_ate_o_ano_final": 0.6608333333333334,
+          "ano_previsto_p05": 2019.0,
+          "ano_mediano_previsto": 2023.0,
+          "ano_previsto_p95": null,
+          "celulas_previstas_ate_o_ano_final": 1.4191666666666667,
+          "ano_velocidade_constante": 2019.0,
+          "ano_vizinha": 2021.0,
+          "probabilidade_ate_o_ano_observado": 0.1225
+        },
+        "Mediterrâneo oriental (a leste de 22°L)": {
+          "celulas_alvo": 37,
+          "celulas_com_registro_ate_o_ano_final": 23,
+          "ano_observado_do_primeiro_registro": 2019,
+          "probabilidade_de_algum_registro_ate_o_ano_final": 0.9891666666666666,
+          "ano_previsto_p05": 2019.0,
+          "ano_mediano_previsto": 2019.0,
+          "ano_previsto_p95": 2020.0,
+          "celulas_previstas_ate_o_ano_final": 5.791666666666667,
+          "ano_velocidade_constante": 2019.0,
+          "ano_vizinha": 2019.0,
+          "probabilidade_ate_o_ano_observado": 0.8958333333333334
+        }
+      }
+    }
+  },
+  "rotulos_dos_metodos": {
+    "modelo": "Modelo de espalhamento (completo)",
+    "modelo_sem_temperatura": "Modelo sem temperatura",
+    "modelo_sem_fracao_suscetivel": "Modelo sem fração suscetível (1ª versão)",
+    "velocidade_constante": "Velocidade constante",
+    "vizinha": "Célula vizinha"
+  },
+  "escolha_da_forma": {
+    "atlantico": {
+      "usa_temperatura": true,
+      "comparacoes": [
+        {
+          "corte": 2010,
+          "horizonte": 5,
+          "brier_sem_temperatura": 0.09682432409381662,
+          "brier_com_temperatura": 0.09466089641080314
+        },
+        {
+          "corte": 2010,
+          "horizonte": 10,
+          "brier_sem_temperatura": 0.12553634115138593,
+          "brier_com_temperatura": 0.11549292673537077
+        },
+        {
+          "corte": 2018,
+          "horizonte": 5,
+          "brier_sem_temperatura": 0.0547649058524173,
+          "brier_com_temperatura": 0.05297292726887193
+        }
+      ]
+    },
+    "mediterraneo": {
+      "usa_temperatura": true,
+      "comparacoes": [
+        {
+          "corte": 2018,
+          "horizonte": 5,
+          "brier_sem_temperatura": 0.17039567676767675,
+          "brier_com_temperatura": 0.1484097537878788
+        }
+      ]
+    }
+  },
+  "previsao": {
+    "atlantico": {
+      "forma": {
+        "fracao_suscetivel": true,
+        "temperatura": true
+      },
+      "parametros": {
+        "alcance_km": 477.1717113719992,
+        "alcance_km_ic": [
+          387.6475171305382,
+          587.37082548373
+        ],
+        "elasticidade_esforco": 0.12357295445480664,
+        "elasticidade_esforco_ic": [
+          0.07643743559353403,
+          0.17070847331607925
+        ],
+        "contagio": 0.02509630241610829,
+        "fundo": 0.0012014999225487153,
+        "log_verossimilhanca": -817.0057620364043,
+        "aic": 1648.0115240728087,
+        "parametros": 7,
+        "eventos": 242,
+        "celulas_ano_em_risco": 11783,
+        "suscetivel_constante": -2.998517199691378,
+        "suscetivel_inclinacao_do_habitat": 0.7774252906854928,
+        "suscetivel_inclinacao_do_habitat_ic": [
+          0.6035153163534276,
+          0.951335265017558
+        ],
+        "limite_termico_c": 7.094880667350073,
+        "limite_termico_c_ic": [
+          5.799498166993893,
+          8.390263167706252
+        ],
+        "celulas_sem_registro": 369,
+        "suscetiveis_esperadas_entre_as_sem_registro": 57.985807902906195
+      },
+      "celulas_sem_registro": 369,
+      "novas_celulas_em_10_anos": {
+        "mediana": 19.0,
+        "p05": 11.0,
+        "p95": 29.0
+      },
+      "frente_km_em_10_anos": {
+        "mediana": 8008.487806790342,
+        "p05": 6692.185367289754,
+        "p95": 10260.766884431354
+      },
+      "celulas_com_prob_10_anos_acima_de_50": 5,
+      "celulas_com_prob_10_anos_acima_de_20": 32,
+      "regioes": {
+        "Costa brasileira": {
+          "celulas": 132,
+          "celulas_sem_registro": 118,
+          "prob_de_algum_registro_novo_em_5_anos": 0.9964,
+          "prob_de_algum_registro_novo_em_10_anos": 1.0,
+          "prob_10_anos_faixa": [
+            1.0,
+            1.0
+          ],
+          "novas_celulas_esperadas_em_5_anos": 6.788000000000001,
+          "novas_celulas_esperadas_em_10_anos": 13.863999999999999,
+          "maior_prob_10_anos": 0.876,
+          "celulas_abaixo_de_16_1": 7
+        },
+        "Brasil ao sul de 13°S": {
+          "celulas": 68,
+          "celulas_sem_registro": 66,
+          "prob_de_algum_registro_novo_em_5_anos": 0.606,
+          "prob_de_algum_registro_novo_em_10_anos": 0.8912,
+          "prob_10_anos_faixa": [
+            0.82,
+            0.96
+          ],
+          "novas_celulas_esperadas_em_5_anos": 1.29,
+          "novas_celulas_esperadas_em_10_anos": 4.252000000000001,
+          "maior_prob_10_anos": 0.374,
+          "celulas_abaixo_de_16_1": 7
+        },
+        "Guianas (Guiana, Suriname, Guiana Francesa)": {
+          "celulas": 21,
+          "celulas_sem_registro": 17,
+          "prob_de_algum_registro_novo_em_5_anos": 0.86,
+          "prob_de_algum_registro_novo_em_10_anos": 0.9564,
+          "prob_10_anos_faixa": [
+            0.889,
+            1.0
+          ],
+          "novas_celulas_esperadas_em_5_anos": 1.9280000000000002,
+          "novas_celulas_esperadas_em_10_anos": 2.872,
+          "maior_prob_10_anos": 0.429,
+          "celulas_abaixo_de_16_1": 0
+        },
+        "EUA ao norte do Cabo Hatteras": {
+          "celulas": 83,
+          "celulas_sem_registro": 76,
+          "prob_de_algum_registro_novo_em_5_anos": 0.2904,
+          "prob_de_algum_registro_novo_em_10_anos": 0.4156,
+          "prob_10_anos_faixa": [
+            0.249,
+            0.5909999999999999
+          ],
+          "novas_celulas_esperadas_em_5_anos": 0.346,
+          "novas_celulas_esperadas_em_10_anos": 0.573,
+          "maior_prob_10_anos": 0.069,
+          "celulas_abaixo_de_16_1": 75
+        }
+      }
+    },
+    "mediterraneo": {
+      "forma": {
+        "fracao_suscetivel": true,
+        "temperatura": true
+      },
+      "parametros": {
+        "alcance_km": 133.7672491500946,
+        "alcance_km_ic": [
+          98.26398444105352,
+          182.09801940117262
+        ],
+        "elasticidade_esforco": 0.10849531070837246,
+        "elasticidade_esforco_ic": [
+          -0.06964286072684145,
+          0.28663348214358636
+        ],
+        "contagio": 0.30667469542650705,
+        "fundo": 0.005244607664301011,
+        "log_verossimilhanca": -258.17159277255905,
+        "aic": 530.3431855451181,
+        "parametros": 7,
+        "eventos": 85,
+        "celulas_ano_em_risco": 2509,
+        "suscetivel_constante": -0.9604915470601668,
+        "suscetivel_inclinacao_do_habitat": 1.0931449155160944,
+        "suscetivel_inclinacao_do_habitat_ic": [
+          0.3639629042050577,
+          1.822326926827131
+        ],
+        "limite_termico_c": 14.11466921339667,
+        "limite_termico_c_ic": [
+          13.501348386688049,
+          14.727990040105292
+        ],
+        "celulas_sem_registro": 151,
+        "suscetiveis_esperadas_entre_as_sem_registro": 40.870992690098646
+      },
+      "celulas_sem_registro": 151,
+      "novas_celulas_em_10_anos": {
+        "mediana": 28.0,
+        "p05": 13.0,
+        "p95": 45.0
+      },
+      "frente_km_em_10_anos": {
+        "mediana": 3744.5534090702995,
+        "p05": 3083.7477125906516,
+        "p95": 3940.068402534824
+      },
+      "celulas_com_prob_10_anos_acima_de_50": 0,
+      "celulas_com_prob_10_anos_acima_de_20": 72,
+      "regioes": {
+        "Mediterrâneo ocidental (a oeste de 12°L)": {
+          "celulas": 82,
+          "celulas_sem_registro": 79,
+          "prob_de_algum_registro_novo_em_5_anos": 0.9948,
+          "prob_de_algum_registro_novo_em_10_anos": 0.9996,
+          "prob_10_anos_faixa": [
+            1.0,
+            1.0
+          ],
+          "novas_celulas_esperadas_em_5_anos": 9.190000000000001,
+          "novas_celulas_esperadas_em_10_anos": 20.483000000000004,
+          "maior_prob_10_anos": 0.465,
+          "celulas_abaixo_de_16_1": 79
+        },
+        "Adriático": {
+          "celulas": 32,
+          "celulas_sem_registro": 21,
+          "prob_de_algum_registro_novo_em_5_anos": 0.75,
+          "prob_de_algum_registro_novo_em_10_anos": 0.8452,
+          "prob_10_anos_faixa": [
+            0.678,
+            0.94
+          ],
+          "novas_celulas_esperadas_em_5_anos": 1.4420000000000002,
+          "novas_celulas_esperadas_em_10_anos": 1.779,
+          "maior_prob_10_anos": 0.337,
+          "celulas_abaixo_de_16_1": 21
+        },
+        "Mediterrâneo oriental (a leste de 22°L)": {
+          "celulas": 71,
+          "celulas_sem_registro": 14,
+          "prob_de_algum_registro_novo_em_5_anos": 0.1564,
+          "prob_de_algum_registro_novo_em_10_anos": 0.1772,
+          "prob_10_anos_faixa": [
+            0.049,
+            0.39099999999999996
+          ],
+          "novas_celulas_esperadas_em_5_anos": 0.17,
+          "novas_celulas_esperadas_em_10_anos": 0.198,
+          "maior_prob_10_anos": 0.062,
+          "celulas_abaixo_de_16_1": 5
+        }
+      }
+    }
+  },
+  "previsao_maiores_probabilidades": {
+    "atlantico": [
+      {
+        "celula": "A_S06_W036",
+        "regiao": "Costa brasileira",
+        "lat_sul": -6,
+        "lon_oeste": -36,
+        "prob_suscetivel": 0.979,
+        "prob_5_anos": 0.64,
+        "prob_10_anos": 0.876,
+        "prob_10_anos_inf": 0.78,
+        "prob_10_anos_sup": 0.94,
+        "tmin_c": 26.24
+      },
+      {
+        "celula": "A_S09_W036",
+        "regiao": "Costa brasileira",
+        "lat_sul": -9,
+        "lon_oeste": -36,
+        "prob_suscetivel": 0.914,
+        "prob_5_anos": 0.452,
+        "prob_10_anos": 0.717,
+        "prob_10_anos_inf": 0.589,
+        "prob_10_anos_sup": 0.822,
+        "tmin_c": 26.14
+      },
+      {
+        "celula": "A_S10_W036",
+        "regiao": "Costa brasileira",
+        "lat_sul": -10,
+        "lon_oeste": -36,
+        "prob_suscetivel": 0.869,
+        "prob_5_anos": 0.377,
+        "prob_10_anos": 0.634,
+        "prob_10_anos_inf": 0.54,
+        "prob_10_anos_sup": 0.74,
+        "tmin_c": 26.06
+      },
+      {
+        "celula": "A_S07_W035",
+        "regiao": "Costa brasileira",
+        "lat_sul": -7,
+        "lon_oeste": -35,
+        "prob_suscetivel": 0.782,
+        "prob_5_anos": 0.34,
+        "prob_10_anos": 0.555,
+        "prob_10_anos_inf": 0.44,
+        "prob_10_anos_sup": 0.72,
+        "tmin_c": 26.37
+      },
+      {
+        "celula": "A_S01_W045",
+        "regiao": "Costa brasileira",
+        "lat_sul": -1,
+        "lon_oeste": -45,
+        "prob_suscetivel": 0.902,
+        "prob_5_anos": 0.29,
+        "prob_10_anos": 0.547,
+        "prob_10_anos_inf": 0.429,
+        "prob_10_anos_sup": 0.702,
+        "tmin_c": 27.1
+      },
+      {
+        "celula": "A_N04_W053",
+        "regiao": "Guianas (Guiana, Suriname, Guiana Francesa)",
+        "lat_sul": 4,
+        "lon_oeste": -53,
+        "prob_suscetivel": 0.522,
+        "prob_5_anos": 0.29,
+        "prob_10_anos": 0.429,
+        "prob_10_anos_inf": 0.3,
+        "prob_10_anos_sup": 0.56,
+        "tmin_c": 27.04
+      },
+      {
+        "celula": "A_S13_W039",
+        "regiao": "Costa brasileira",
+        "lat_sul": -13,
+        "lon_oeste": -39,
+        "prob_suscetivel": 0.946,
+        "prob_5_anos": 0.164,
+        "prob_10_anos": 0.42,
+        "prob_10_anos_inf": 0.329,
+        "prob_10_anos_sup": 0.511,
+        "tmin_c": 25.64
+      },
+      {
+        "celula": "A_S04_W040",
+        "regiao": "Costa brasileira",
+        "lat_sul": -4,
+        "lon_oeste": -40,
+        "prob_suscetivel": 0.543,
+        "prob_5_anos": 0.246,
+        "prob_10_anos": 0.394,
+        "prob_10_anos_inf": 0.289,
+        "prob_10_anos_sup": 0.502,
+        "tmin_c": 26.61
+      },
+      {
+        "celula": "A_N04_W052",
+        "regiao": "",
+        "lat_sul": 4,
+        "lon_oeste": -52,
+        "prob_suscetivel": 0.457,
+        "prob_5_anos": 0.243,
+        "prob_10_anos": 0.376,
+        "prob_10_anos_inf": 0.28,
+        "prob_10_anos_sup": 0.491,
+        "tmin_c": 27.2
+      },
+      {
+        "celula": "A_S14_W039",
+        "regiao": "Costa brasileira",
+        "lat_sul": -14,
+        "lon_oeste": -39,
+        "prob_suscetivel": 0.867,
+        "prob_5_anos": 0.146,
+        "prob_10_anos": 0.374,
+        "prob_10_anos_inf": 0.209,
+        "prob_10_anos_sup": 0.54,
+        "tmin_c": 25.6
+      },
+      {
+        "celula": "A_N05_W052",
+        "regiao": "",
+        "lat_sul": 5,
+        "lon_oeste": -52,
+        "prob_suscetivel": 0.406,
+        "prob_5_anos": 0.218,
+        "prob_10_anos": 0.328,
+        "prob_10_anos_inf": 0.229,
+        "prob_10_anos_sup": 0.491,
+        "tmin_c": 27.19
+      },
+      {
+        "celula": "A_S11_W037",
+        "regiao": "Costa brasileira",
+        "lat_sul": -11,
+        "lon_oeste": -37,
+        "prob_suscetivel": 0.559,
+        "prob_5_anos": 0.164,
+        "prob_10_anos": 0.324,
+        "prob_10_anos_inf": 0.229,
+        "prob_10_anos_sup": 0.4,
+        "tmin_c": 25.88
+      }
+    ],
+    "mediterraneo": [
+      {
+        "celula": "M_N36_E003",
+        "regiao": "Mediterrâneo ocidental (a oeste de 12°L)",
+        "lat_sul": 36,
+        "lon_oeste": 3,
+        "prob_suscetivel": 0.71,
+        "prob_5_anos": 0.161,
+        "prob_10_anos": 0.465,
+        "prob_10_anos_inf": 0.22,
+        "prob_10_anos_sup": 0.691,
+        "tmin_c": 15.21
+      },
+      {
+        "celula": "M_N36_E006",
+        "regiao": "Mediterrâneo ocidental (a oeste de 12°L)",
+        "lat_sul": 36,
+        "lon_oeste": 6,
+        "prob_suscetivel": 0.612,
+        "prob_5_anos": 0.231,
+        "prob_10_anos": 0.464,
+        "prob_10_anos_inf": 0.28,
+        "prob_10_anos_sup": 0.651,
+        "tmin_c": 15.06
+      },
+      {
+        "celula": "M_N37_E006",
+        "regiao": "Mediterrâneo ocidental (a oeste de 12°L)",
+        "lat_sul": 37,
+        "lon_oeste": 6,
+        "prob_suscetivel": 0.57,
+        "prob_5_anos": 0.222,
+        "prob_10_anos": 0.452,
+        "prob_10_anos_inf": 0.26,
+        "prob_10_anos_sup": 0.611,
+        "tmin_c": 14.98
+      },
+      {
+        "celula": "M_N33_E011",
+        "regiao": "Mediterrâneo ocidental (a oeste de 12°L)",
+        "lat_sul": 33,
+        "lon_oeste": 11,
+        "prob_suscetivel": 0.601,
+        "prob_5_anos": 0.238,
+        "prob_10_anos": 0.448,
+        "prob_10_anos_inf": 0.28,
+        "prob_10_anos_sup": 0.64,
+        "tmin_c": 15.18
+      },
+      {
+        "celula": "M_N36_E005",
+        "regiao": "Mediterrâneo ocidental (a oeste de 12°L)",
+        "lat_sul": 36,
+        "lon_oeste": 5,
+        "prob_suscetivel": 0.63,
+        "prob_5_anos": 0.172,
+        "prob_10_anos": 0.442,
+        "prob_10_anos_inf": 0.258,
+        "prob_10_anos_sup": 0.64,
+        "tmin_c": 15.07
+      },
+      {
+        "celula": "M_N36_E008",
+        "regiao": "Mediterrâneo ocidental (a oeste de 12°L)",
+        "lat_sul": 36,
+        "lon_oeste": 8,
+        "prob_suscetivel": 0.502,
+        "prob_5_anos": 0.263,
+        "prob_10_anos": 0.43,
+        "prob_10_anos_inf": 0.249,
+        "prob_10_anos_sup": 0.611,
+        "tmin_c": 14.97
+      },
+      {
+        "celula": "M_N37_E007",
+        "regiao": "Mediterrâneo ocidental (a oeste de 12°L)",
+        "lat_sul": 37,
+        "lon_oeste": 7,
+        "prob_suscetivel": 0.506,
+        "prob_5_anos": 0.24,
+        "prob_10_anos": 0.401,
+        "prob_10_anos_inf": 0.22,
+        "prob_10_anos_sup": 0.591,
+        "tmin_c": 14.96
+      },
+      {
+        "celula": "M_N36_E004",
+        "regiao": "Mediterrâneo ocidental (a oeste de 12°L)",
+        "lat_sul": 36,
+        "lon_oeste": 4,
+        "prob_suscetivel": 0.602,
+        "prob_5_anos": 0.15,
+        "prob_10_anos": 0.4,
+        "prob_10_anos_inf": 0.189,
+        "prob_10_anos_sup": 0.593,
+        "tmin_c": 15.11
+      },
+      {
+        "celula": "M_N39_E002",
+        "regiao": "Mediterrâneo ocidental (a oeste de 12°L)",
+        "lat_sul": 39,
+        "lon_oeste": 2,
+        "prob_suscetivel": 0.548,
+        "prob_5_anos": 0.151,
+        "prob_10_anos": 0.398,
+        "prob_10_anos_inf": 0.24,
+        "prob_10_anos_sup": 0.573,
+        "tmin_c": 14.52
+      },
+      {
+        "celula": "M_N37_W001",
+        "regiao": "Mediterrâneo ocidental (a oeste de 12°L)",
+        "lat_sul": 37,
+        "lon_oeste": -1,
+        "prob_suscetivel": 0.634,
+        "prob_5_anos": 0.119,
+        "prob_10_anos": 0.395,
+        "prob_10_anos_inf": 0.209,
+        "prob_10_anos_sup": 0.611,
+        "tmin_c": 14.79
+      },
+      {
+        "celula": "M_N38_E001",
+        "regiao": "Mediterrâneo ocidental (a oeste de 12°L)",
+        "lat_sul": 38,
+        "lon_oeste": 1,
+        "prob_suscetivel": 0.617,
+        "prob_5_anos": 0.134,
+        "prob_10_anos": 0.395,
+        "prob_10_anos_inf": 0.209,
+        "prob_10_anos_sup": 0.631,
+        "tmin_c": 14.73
+      },
+      {
+        "celula": "M_N39_E003",
+        "regiao": "Mediterrâneo ocidental (a oeste de 12°L)",
+        "lat_sul": 39,
+        "lon_oeste": 3,
+        "prob_suscetivel": 0.529,
+        "prob_5_anos": 0.163,
+        "prob_10_anos": 0.389,
+        "prob_10_anos_inf": 0.229,
+        "prob_10_anos_sup": 0.551,
+        "tmin_c": 14.47
+      }
+    ]
+  },
+  "limite_termico": {
+    "letal_c": 10.0,
+    "sem_alimentacao_c": 16.1,
+    "atlantico": {
+      "com_registro": {
+        "celulas": 248,
+        "minima": 2.77,
+        "p05": 14.666,
+        "mediana": 25.29,
+        "abaixo_de_16_1": 21,
+        "abaixo_de_10": 6
+      },
+      "sem_registro": {
+        "celulas": 369,
+        "abaixo_de_16_1": 129,
+        "abaixo_de_10": 84,
+        "mediana": 23.74
+      }
+    },
+    "mediterraneo": {
+      "com_registro": {
+        "celulas": 86,
+        "minima": 12.54,
+        "p05": 13.6975,
+        "mediana": 15.955,
+        "abaixo_de_16_1": 45,
+        "abaixo_de_10": 0
+      },
+      "sem_registro": {
+        "celulas": 151,
+        "abaixo_de_16_1": 123,
+        "abaixo_de_10": 4,
+        "mediana": 14.62
+      }
+    }
+  },
+  "para_o_site": {
+    "numero_chave": {
+      "pt": "2017 × 2020",
+      "en": "2017 vs 2020",
+      "es": "2017 × 2020"
+    },
+    "pergunta": {
+      "pt": "Onde o peixe-leão vai chegar a seguir, e quando?",
+      "en": "Where will the lionfish show up next, and when?",
+      "es": "¿Adónde llegará el pez león a continuación, y cuándo?"
+    },
+    "resultado": {
+      "pt": "Um modelo de espalhamento ajustado só com os registros até 2010 previa o primeiro registro no Brasil para 2017 (faixa de 90%: 2013 a 2024); ele veio em 2020. Para os próximos dez anos, a chegada mais provável é no Nordeste do Brasil, com até 88% de probabilidade por célula de 1°.",
+      "en": "A spread model fitted only to records through 2010 put the first Brazilian record in 2017 (90% range: 2013 to 2024); it came in 2020. Over the next ten years the most likely arrivals are along northeastern Brazil, with up to 88% probability per 1° cell.",
+      "es": "Un modelo de dispersión ajustado solo con los registros hasta 2010 preveía el primer registro en Brasil para 2017 (rango del 90%: 2013 a 2024); llegó en 2020. Para los próximos diez años, la llegada más probable está en el nordeste de Brasil, con hasta 88% de probabilidad por celda de 1°."
+    },
+    "detalhe": {
+      "pt": "Nesse teste o modelo acerta quanto a invasão cresce (252 células previstas para 2025, 248 observadas; a regra da célula vizinha previa 439), mas empata com ela na ordem das células (AUC de 0,84 contra 0,84). No gráfico, as células de plataforma com registro depois de 2010: o previsto por cada método e o que aconteceu.",
+      "en": "In that test the model gets the size of the invasion right (252 cells predicted for 2025, 248 observed; the nearest-neighbour rule predicted 439), but only ties with that rule at ranking which cells come next (AUC 0.84 vs 0.84). The chart shows shelf cells with a record after 2010: what each method predicted and what happened.",
+      "es": "En esa prueba el modelo acierta cuánto crece la invasión (252 celdas previstas para 2025, 248 observadas; la regla de la celda vecina preveía 439), pero empata con ella al ordenar las celdas (AUC de 0,84 frente a 0,84). En el gráfico, las celdas de plataforma con registro después de 2010: lo previsto por cada método y lo que ocurrió."
+    },
+    "dados": {
+      "pt": "13.349 registros públicos de USGS NAS, GBIF e OBIS depois da limpeza, em 854 células de 1° da plataforma do Atlântico oeste e do Mediterrâneo, de 1985 a 2025.",
+      "en": "13,349 public records from USGS NAS, GBIF and OBIS after cleaning, on 854 one-degree shelf cells of the western Atlantic and the Mediterranean, 1985 to 2025.",
+      "es": "13.349 registros públicos de USGS NAS, GBIF y OBIS tras la limpieza, en 854 celdas de 1° de la plataforma del Atlántico occidental y del Mediterráneo, de 1985 a 2025."
+    },
+    "etiquetas": [
+      "invasão biológica",
+      "modelo de espalhamento",
+      "validação no tempo",
+      "dados de ocorrência",
+      "NumPy/SciPy"
+    ],
+    "grafico": {
+      "tipo": "linhas",
+      "titulo": {
+        "pt": "Células ocupadas depois de 2010: previsto e realizado (Atlântico oeste)",
+        "en": "Occupied cells after 2010: predicted vs observed (western Atlantic)",
+        "es": "Celdas ocupadas después de 2010: previsto y observado (Atlántico occidental)"
+      },
+      "eixo_x": {
+        "pt": "Ano",
+        "en": "Year",
+        "es": "Año"
+      },
+      "eixo_y": {
+        "pt": "Células de 1° com registro",
+        "en": "1° cells with a record",
+        "es": "Celdas de 1° con registro"
+      },
+      "formato_x": "numero",
+      "formato_y": "numero",
+      "series": [
+        {
+          "nome": {
+            "pt": "Modelo de espalhamento",
+            "en": "Spread model",
+            "es": "Modelo de dispersión"
+          },
+          "papel": "principal",
+          "pontos": [
+            [
+              2010,
+              148.0
+            ],
+            [
+              2011,
+              172.0
+            ],
+            [
+              2012,
+              193.0
+            ],
+            [
+              2013,
+              209.0
+            ],
+            [
+              2014,
+              220.0
+            ],
+            [
+              2015,
+              227.0
+            ],
+            [
+              2016,
+              232.0
+            ],
+            [
+              2017,
+              235.0
+            ],
+            [
+              2018,
+              238.5
+            ],
+            [
+              2019,
+              241.0
+            ],
+            [
+              2020,
+              243.0
+            ],
+            [
+              2021,
+              245.5
+            ],
+            [
+              2022,
+              247.0
+            ],
+            [
+              2023,
+              249.0
+            ],
+            [
+              2024,
+              250.0
+            ],
+            [
+              2025,
+              252.0
+            ]
+          ]
+        },
+        {
+          "nome": {
+            "pt": "Velocidade constante",
+            "en": "Constant speed",
+            "es": "Velocidad constante"
+          },
+          "papel": "base",
+          "pontos": [
+            [
+              2010,
+              148.0
+            ],
+            [
+              2011,
+              390.0
+            ],
+            [
+              2012,
+              400.0
+            ],
+            [
+              2013,
+              406.0
+            ],
+            [
+              2014,
+              418.0
+            ],
+            [
+              2015,
+              432.0
+            ],
+            [
+              2016,
+              438.0
+            ],
+            [
+              2017,
+              444.0
+            ],
+            [
+              2018,
+              452.0
+            ],
+            [
+              2019,
+              460.0
+            ],
+            [
+              2020,
+              468.0
+            ],
+            [
+              2021,
+              475.0
+            ],
+            [
+              2022,
+              481.0
+            ],
+            [
+              2023,
+              484.0
+            ],
+            [
+              2024,
+              489.0
+            ],
+            [
+              2025,
+              492.0
+            ]
+          ]
+        },
+        {
+          "nome": {
+            "pt": "Célula vizinha",
+            "en": "Nearest neighbour",
+            "es": "Celda vecina"
+          },
+          "papel": "alternativa",
+          "pontos": [
+            [
+              2010,
+              148.0
+            ],
+            [
+              2011,
+              233.0
+            ],
+            [
+              2012,
+              291.0
+            ],
+            [
+              2013,
+              311.0
+            ],
+            [
+              2014,
+              326.0
+            ],
+            [
+              2015,
+              340.0
+            ],
+            [
+              2016,
+              345.0
+            ],
+            [
+              2017,
+              350.0
+            ],
+            [
+              2018,
+              356.0
+            ],
+            [
+              2019,
+              367.0
+            ],
+            [
+              2020,
+              375.0
+            ],
+            [
+              2021,
+              381.0
+            ],
+            [
+              2022,
+              391.0
+            ],
+            [
+              2023,
+              404.0
+            ],
+            [
+              2024,
+              422.0
+            ],
+            [
+              2025,
+              439.0
+            ]
+          ]
+        },
+        {
+          "nome": {
+            "pt": "O que aconteceu",
+            "en": "What happened",
+            "es": "Lo que ocurrió"
+          },
+          "papel": "neutro",
+          "pontos": [
+            [
+              2010,
+              148.0
+            ],
+            [
+              2011,
+              179.0
+            ],
+            [
+              2012,
+              193.0
+            ],
+            [
+              2013,
+              206.0
+            ],
+            [
+              2014,
+              214.0
+            ],
+            [
+              2015,
+              215.0
+            ],
+            [
+              2016,
+              222.0
+            ],
+            [
+              2017,
+              223.0
+            ],
+            [
+              2018,
+              224.0
+            ],
+            [
+              2019,
+              224.0
+            ],
+            [
+              2020,
+              227.0
+            ],
+            [
+              2021,
+              231.0
+            ],
+            [
+              2022,
+              241.0
+            ],
+            [
+              2023,
+              245.0
+            ],
+            [
+              2024,
+              246.0
+            ],
+            [
+              2025,
+              248.0
+            ]
+          ]
+        }
+      ],
+      "faixa": {
+        "serie": 0,
+        "inferior": [
+          [
+            2010,
+            148.0
+          ],
+          [
+            2011,
+            165.0
+          ],
+          [
+            2012,
+            181.0
+          ],
+          [
+            2013,
+            194.0
+          ],
+          [
+            2014,
+            204.0
+          ],
+          [
+            2015,
+            211.0
+          ],
+          [
+            2016,
+            215.0
+          ],
+          [
+            2017,
+            218.0
+          ],
+          [
+            2018,
+            220.0
+          ],
+          [
+            2019,
+            222.0
+          ],
+          [
+            2020,
+            223.0
+          ],
+          [
+            2021,
+            225.0
+          ],
+          [
+            2022,
+            226.0
+          ],
+          [
+            2023,
+            228.0
+          ],
+          [
+            2024,
+            229.0
+          ],
+          [
+            2025,
+            230.0
+          ]
+        ],
+        "superior": [
+          [
+            2010,
+            148.0
+          ],
+          [
+            2011,
+            181.0
+          ],
+          [
+            2012,
+            205.0
+          ],
+          [
+            2013,
+            224.0
+          ],
+          [
+            2014,
+            236.0
+          ],
+          [
+            2015,
+            244.0
+          ],
+          [
+            2016,
+            250.0
+          ],
+          [
+            2017,
+            254.0
+          ],
+          [
+            2018,
+            258.0
+          ],
+          [
+            2019,
+            261.0
+          ],
+          [
+            2020,
+            264.0
+          ],
+          [
+            2021,
+            266.0
+          ],
+          [
+            2022,
+            269.0
+          ],
+          [
+            2023,
+            271.0
+          ],
+          [
+            2024,
+            273.0
+          ],
+          [
+            2025,
+            275.0
+          ]
+        ]
+      }
+    }
+  },
+  "tempo_de_execucao_s": 137.2
+}
