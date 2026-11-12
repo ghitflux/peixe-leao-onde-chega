@@ -3860,7 +3860,2049 @@
           ]
         ]
       }
-    }
+    },
+    "graficos_extras": [
+      {
+        "tipo": "linhas",
+        "titulo": {
+          "pt": "Em 2020 a frente saltou de 2.735 para 6.283 km; o modelo previa 4.778",
+          "en": "In 2020 the front jumped from 2,735 to 6,283 km; the model expected 4,778",
+          "es": "En 2020 el frente saltó de 2.735 a 6.283 km; el modelo preveía 4.778"
+        },
+        "leitura": {
+          "pt": "Distância da frente ao ponto de introdução, pelo mar, com o modelo ajustado até 2010. A frente real ficou parada por anos e depois cruzou a foz do Amazonas de uma vez; o modelo previa um avanço contínuo.",
+          "en": "Sea distance from the front to the introduction point, with the model fitted through 2010. The real front stalled for years and then crossed the Amazon mouth in one step; the model expected a steady advance.",
+          "es": "Distancia del frente al punto de introducción, por mar, con el modelo ajustado hasta 2010. El frente real se detuvo durante años y luego cruzó la desembocadura del Amazonas de una vez; el modelo preveía un avance continuo."
+        },
+        "eixo_x": {
+          "pt": "Ano",
+          "en": "Year",
+          "es": "Año"
+        },
+        "eixo_y": {
+          "pt": "Distância da frente (km)",
+          "en": "Front distance (km)",
+          "es": "Distancia del frente (km)"
+        },
+        "formato_x": "numero",
+        "formato_y": "numero",
+        "series": [
+          {
+            "nome": {
+              "pt": "Modelo de espalhamento",
+              "en": "Spread model",
+              "es": "Modelo de dispersión"
+            },
+            "papel": "principal",
+            "pontos": [
+              [
+                2010,
+                2457
+              ],
+              [
+                2011,
+                2735
+              ],
+              [
+                2012,
+                3118
+              ],
+              [
+                2013,
+                3414
+              ],
+              [
+                2014,
+                3704
+              ],
+              [
+                2015,
+                3866
+              ],
+              [
+                2016,
+                3976
+              ],
+              [
+                2017,
+                4279
+              ],
+              [
+                2018,
+                4499
+              ],
+              [
+                2019,
+                4665
+              ],
+              [
+                2020,
+                4778
+              ],
+              [
+                2021,
+                4961
+              ],
+              [
+                2022,
+                5071
+              ],
+              [
+                2023,
+                5206
+              ],
+              [
+                2024,
+                5269
+              ],
+              [
+                2025,
+                5424
+              ]
+            ]
+          },
+          {
+            "nome": {
+              "pt": "Velocidade constante",
+              "en": "Constant speed",
+              "es": "Velocidad constante"
+            },
+            "papel": "base",
+            "pontos": [
+              [
+                2010,
+                2457
+              ],
+              [
+                2011,
+                2652
+              ],
+              [
+                2012,
+                2905
+              ],
+              [
+                2013,
+                3198
+              ],
+              [
+                2014,
+                3446
+              ],
+              [
+                2015,
+                3705
+              ],
+              [
+                2016,
+                3899
+              ],
+              [
+                2017,
+                4184
+              ],
+              [
+                2018,
+                4450
+              ],
+              [
+                2019,
+                4665
+              ],
+              [
+                2020,
+                4914
+              ],
+              [
+                2021,
+                5178
+              ],
+              [
+                2022,
+                5450
+              ],
+              [
+                2023,
+                5669
+              ],
+              [
+                2024,
+                5947
+              ],
+              [
+                2025,
+                6183
+              ]
+            ]
+          },
+          {
+            "nome": {
+              "pt": "O que aconteceu",
+              "en": "What happened",
+              "es": "Lo que ocurrió"
+            },
+            "papel": "neutro",
+            "pontos": [
+              [
+                2010,
+                2457
+              ],
+              [
+                2011,
+                2622
+              ],
+              [
+                2012,
+                2735
+              ],
+              [
+                2013,
+                2735
+              ],
+              [
+                2014,
+                2735
+              ],
+              [
+                2015,
+                2735
+              ],
+              [
+                2016,
+                2735
+              ],
+              [
+                2017,
+                2735
+              ],
+              [
+                2018,
+                2735
+              ],
+              [
+                2019,
+                2735
+              ],
+              [
+                2020,
+                6283
+              ],
+              [
+                2021,
+                6283
+              ],
+              [
+                2022,
+                6283
+              ],
+              [
+                2023,
+                6476
+              ],
+              [
+                2024,
+                6476
+              ],
+              [
+                2025,
+                6565
+              ]
+            ]
+          }
+        ],
+        "faixa": {
+          "serie": 0,
+          "inferior": [
+            [
+              2010,
+              2457
+            ],
+            [
+              2011,
+              2457
+            ],
+            [
+              2012,
+              2622
+            ],
+            [
+              2013,
+              2735
+            ],
+            [
+              2014,
+              2856
+            ],
+            [
+              2015,
+              3118
+            ],
+            [
+              2016,
+              3260
+            ],
+            [
+              2017,
+              3414
+            ],
+            [
+              2018,
+              3604
+            ],
+            [
+              2019,
+              3705
+            ],
+            [
+              2020,
+              3826
+            ],
+            [
+              2021,
+              3897
+            ],
+            [
+              2022,
+              3976
+            ],
+            [
+              2023,
+              4035
+            ],
+            [
+              2024,
+              4130
+            ],
+            [
+              2025,
+              4342
+            ]
+          ],
+          "superior": [
+            [
+              2010,
+              2457
+            ],
+            [
+              2011,
+              3714
+            ],
+            [
+              2012,
+              4035
+            ],
+            [
+              2013,
+              4442
+            ],
+            [
+              2014,
+              4730
+            ],
+            [
+              2015,
+              4873
+            ],
+            [
+              2016,
+              5178
+            ],
+            [
+              2017,
+              5336
+            ],
+            [
+              2018,
+              5528
+            ],
+            [
+              2019,
+              5757
+            ],
+            [
+              2020,
+              6064
+            ],
+            [
+              2021,
+              6283
+            ],
+            [
+              2022,
+              6353
+            ],
+            [
+              2023,
+              6619
+            ],
+            [
+              2024,
+              6692
+            ],
+            [
+              2025,
+              6931
+            ]
+          ]
+        }
+      },
+      {
+        "tipo": "barras",
+        "titulo": {
+          "pt": "A célula mais provável tem 88% de chance de ganhar registro em dez anos",
+          "en": "The most likely cell has a 88% chance of a first record within ten years",
+          "es": "La celda más probable tiene 88% de probabilidad de registro en diez años"
+        },
+        "leitura": {
+          "pt": "As dez células de 1° do Atlântico oeste ainda sem registro com maior probabilidade de primeiro registro, pelo canto sudoeste. Quase todas ficam no Nordeste do Brasil. É exercício de modelagem, não previsão oficial.",
+          "en": "The ten unrecorded 1° cells of the western Atlantic with the highest probability of a first record, labelled by their south-west corner. Nearly all lie along northeastern Brazil. A modelling exercise, not an official forecast.",
+          "es": "Las diez celdas de 1° del Atlántico occidental aún sin registro con mayor probabilidad de primer registro, por su esquina suroeste. Casi todas están en el nordeste de Brasil. Es un ejercicio de modelado, no un pronóstico oficial."
+        },
+        "eixo_x": {
+          "pt": "Célula (canto sudoeste)",
+          "en": "Cell (south-west corner)",
+          "es": "Celda (esquina suroeste)"
+        },
+        "eixo_y": {
+          "pt": "Probabilidade de primeiro registro",
+          "en": "Probability of a first record",
+          "es": "Probabilidad de primer registro"
+        },
+        "formato_x": "numero",
+        "formato_y": "percentual",
+        "series": [
+          {
+            "nome": {
+              "pt": "Em 10 anos",
+              "en": "Within 10 years",
+              "es": "En 10 años"
+            },
+            "papel": "principal",
+            "rotulos": {
+              "pt": [
+                "6°S 36°O",
+                "9°S 36°O",
+                "10°S 36°O",
+                "7°S 35°O",
+                "1°S 45°O",
+                "4°N 53°O",
+                "13°S 39°O",
+                "4°S 40°O",
+                "4°N 52°O",
+                "14°S 39°O"
+              ],
+              "en": [
+                "6°S 36°W",
+                "9°S 36°W",
+                "10°S 36°W",
+                "7°S 35°W",
+                "1°S 45°W",
+                "4°N 53°W",
+                "13°S 39°W",
+                "4°S 40°W",
+                "4°N 52°W",
+                "14°S 39°W"
+              ],
+              "es": [
+                "6°S 36°O",
+                "9°S 36°O",
+                "10°S 36°O",
+                "7°S 35°O",
+                "1°S 45°O",
+                "4°N 53°O",
+                "13°S 39°O",
+                "4°S 40°O",
+                "4°N 52°O",
+                "14°S 39°O"
+              ]
+            },
+            "pontos": [
+              [
+                "6°S 36°O",
+                0.876
+              ],
+              [
+                "9°S 36°O",
+                0.717
+              ],
+              [
+                "10°S 36°O",
+                0.634
+              ],
+              [
+                "7°S 35°O",
+                0.555
+              ],
+              [
+                "1°S 45°O",
+                0.547
+              ],
+              [
+                "4°N 53°O",
+                0.429
+              ],
+              [
+                "13°S 39°O",
+                0.42
+              ],
+              [
+                "4°S 40°O",
+                0.394
+              ],
+              [
+                "4°N 52°O",
+                0.376
+              ],
+              [
+                "14°S 39°O",
+                0.374
+              ]
+            ]
+          },
+          {
+            "nome": {
+              "pt": "Em 5 anos",
+              "en": "Within 5 years",
+              "es": "En 5 años"
+            },
+            "papel": "neutro",
+            "rotulos": {
+              "pt": [
+                "6°S 36°O",
+                "9°S 36°O",
+                "10°S 36°O",
+                "7°S 35°O",
+                "1°S 45°O",
+                "4°N 53°O",
+                "13°S 39°O",
+                "4°S 40°O",
+                "4°N 52°O",
+                "14°S 39°O"
+              ],
+              "en": [
+                "6°S 36°W",
+                "9°S 36°W",
+                "10°S 36°W",
+                "7°S 35°W",
+                "1°S 45°W",
+                "4°N 53°W",
+                "13°S 39°W",
+                "4°S 40°W",
+                "4°N 52°W",
+                "14°S 39°W"
+              ],
+              "es": [
+                "6°S 36°O",
+                "9°S 36°O",
+                "10°S 36°O",
+                "7°S 35°O",
+                "1°S 45°O",
+                "4°N 53°O",
+                "13°S 39°O",
+                "4°S 40°O",
+                "4°N 52°O",
+                "14°S 39°O"
+              ]
+            },
+            "pontos": [
+              [
+                "6°S 36°O",
+                0.64
+              ],
+              [
+                "9°S 36°O",
+                0.452
+              ],
+              [
+                "10°S 36°O",
+                0.377
+              ],
+              [
+                "7°S 35°O",
+                0.34
+              ],
+              [
+                "1°S 45°O",
+                0.29
+              ],
+              [
+                "4°N 53°O",
+                0.29
+              ],
+              [
+                "13°S 39°O",
+                0.164
+              ],
+              [
+                "4°S 40°O",
+                0.246
+              ],
+              [
+                "4°N 52°O",
+                0.243
+              ],
+              [
+                "14°S 39°O",
+                0.146
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "barras",
+        "titulo": {
+          "pt": "Com detecção imperfeita, a média erra a velocidade em 31%; o quantil do ano, em 0,2%",
+          "en": "With imperfect detection the mean misses the speed by 31%; the year quantile by 0.2%",
+          "es": "Con detección imperfecta, la media falla la velocidad en 31%; el cuantil del año, en 0,2%"
+        },
+        "leitura": {
+          "pt": "Erro médio de cada estimador numa invasão simulada com frente de 250 km por ano, em 200 simulações. Abaixo de zero, o estimador subestima a velocidade. Os de média erram mais quando há menos observadores longe da origem.",
+          "en": "Mean error of each estimator on a simulated invasion with a 250 km/yr front, over 200 runs. Below zero the estimator underestimates speed. The mean-based ones get worse when observers thin out far from the origin.",
+          "es": "Error medio de cada estimador en una invasión simulada con un frente de 250 km por año, en 200 simulaciones. Por debajo de cero, el estimador subestima la velocidad. Los de media fallan más cuando hay menos observadores lejos del origen."
+        },
+        "eixo_x": {
+          "pt": "Estimador",
+          "en": "Estimator",
+          "es": "Estimador"
+        },
+        "eixo_y": {
+          "pt": "Erro relativo na velocidade",
+          "en": "Relative error in speed",
+          "es": "Error relativo en la velocidad"
+        },
+        "formato_x": "numero",
+        "formato_y": "percentual",
+        "series": [
+          {
+            "nome": {
+              "pt": "Menos esforço longe da origem",
+              "en": "Less effort far from the origin",
+              "es": "Menos esfuerzo lejos del origen"
+            },
+            "papel": "principal",
+            "rotulos": {
+              "pt": [
+                "Média: distância × ano",
+                "Média: ano × distância",
+                "Média com esforço",
+                "Quantil 0,90 da distância",
+                "Quantil 0,10 do ano",
+                "Envelope dos recordes"
+              ],
+              "en": [
+                "Mean: distance on year",
+                "Mean: year on distance",
+                "Mean with effort",
+                "0.90 quantile of distance",
+                "0.10 quantile of year",
+                "Record envelope"
+              ],
+              "es": [
+                "Media: distancia × año",
+                "Media: año × distancia",
+                "Media con esfuerzo",
+                "Cuantil 0,90 de la distancia",
+                "Cuantil 0,10 del año",
+                "Envolvente de récords"
+              ]
+            },
+            "pontos": [
+              [
+                "Média: distância × ano",
+                -0.3119
+              ],
+              [
+                "Média: ano × distância",
+                0.1147
+              ],
+              [
+                "Média com esforço",
+                0.2769
+              ],
+              [
+                "Quantil 0,90 da distância",
+                -0.0969
+              ],
+              [
+                "Quantil 0,10 do ano",
+                -0.002
+              ],
+              [
+                "Envelope dos recordes",
+                -0.047
+              ]
+            ]
+          },
+          {
+            "nome": {
+              "pt": "Detecção imperfeita, esforço uniforme",
+              "en": "Imperfect detection, even effort",
+              "es": "Detección imperfecta, esfuerzo uniforme"
+            },
+            "papel": "neutro",
+            "rotulos": {
+              "pt": [
+                "Média: distância × ano",
+                "Média: ano × distância",
+                "Média com esforço",
+                "Quantil 0,90 da distância",
+                "Quantil 0,10 do ano",
+                "Envelope dos recordes"
+              ],
+              "en": [
+                "Mean: distance on year",
+                "Mean: year on distance",
+                "Mean with effort",
+                "0.90 quantile of distance",
+                "0.10 quantile of year",
+                "Record envelope"
+              ],
+              "es": [
+                "Media: distancia × año",
+                "Media: año × distancia",
+                "Media con esfuerzo",
+                "Cuantil 0,90 de la distancia",
+                "Cuantil 0,10 del año",
+                "Envolvente de récords"
+              ]
+            },
+            "pontos": [
+              [
+                "Média: distância × ano",
+                -0.1542
+              ],
+              [
+                "Média: ano × distância",
+                0.1777
+              ],
+              [
+                "Média com esforço",
+                0.1563
+              ],
+              [
+                "Quantil 0,90 da distância",
+                -0.0275
+              ],
+              [
+                "Quantil 0,10 do ano",
+                0.0248
+              ],
+              [
+                "Envelope dos recordes",
+                -0.0044
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "pontos",
+        "titulo": {
+          "pt": "No Atlântico, a média dá 186 km por ano; os estimadores de frente, de 309 a 406",
+          "en": "In the Atlantic the mean gives 186 km/yr; front estimators give 309 to 406",
+          "es": "En el Atlántico, la media da 186 km por año; los estimadores de frente, de 309 a 406"
+        },
+        "leitura": {
+          "pt": "Cada ponto é uma célula de 1°: o ano do primeiro registro e a distância pelo mar até a Flórida. Os recordes de distância desenham a frente; a nuvem embaixo são as células ocupadas depois que a frente passou, e é ela que puxa a média para baixo.",
+          "en": "Each dot is a 1° cell: the year of its first record and its sea distance to Florida. The distance records trace the front; the cloud below is cells filled in after the front passed, which is what drags the mean down.",
+          "es": "Cada punto es una celda de 1°: el año del primer registro y la distancia por mar hasta Florida. Los récords de distancia dibujan el frente; la nube de abajo son las celdas ocupadas después de que pasó el frente, y es la que arrastra la media hacia abajo."
+        },
+        "eixo_x": {
+          "pt": "Ano do primeiro registro",
+          "en": "Year of first record",
+          "es": "Año del primer registro"
+        },
+        "eixo_y": {
+          "pt": "Distância até a introdução (km)",
+          "en": "Distance to introduction (km)",
+          "es": "Distancia a la introducción (km)"
+        },
+        "formato_x": "numero",
+        "formato_y": "numero",
+        "series": [
+          {
+            "nome": {
+              "pt": "Recordes de distância (a frente)",
+              "en": "Distance records (the front)",
+              "es": "Récords de distancia (el frente)"
+            },
+            "papel": "principal",
+            "pontos": [
+              [
+                2003,
+                84
+              ],
+              [
+                2004,
+                303
+              ],
+              [
+                2005,
+                546
+              ],
+              [
+                2006,
+                601
+              ],
+              [
+                2007,
+                1126
+              ],
+              [
+                2008,
+                2030
+              ],
+              [
+                2009,
+                2391
+              ],
+              [
+                2010,
+                2457
+              ],
+              [
+                2011,
+                2622
+              ],
+              [
+                2012,
+                2735
+              ],
+              [
+                2020,
+                6283
+              ],
+              [
+                2023,
+                6476
+              ],
+              [
+                2025,
+                6565
+              ]
+            ]
+          },
+          {
+            "nome": {
+              "pt": "Células",
+              "en": "Cells",
+              "es": "Celdas"
+            },
+            "papel": "neutro",
+            "pontos": [
+              [
+                2003,
+                84
+              ],
+              [
+                2004,
+                303
+              ],
+              [
+                2005,
+                287
+              ],
+              [
+                2005,
+                336
+              ],
+              [
+                2005,
+                340
+              ],
+              [
+                2005,
+                433
+              ],
+              [
+                2005,
+                498
+              ],
+              [
+                2005,
+                546
+              ],
+              [
+                2006,
+                410
+              ],
+              [
+                2006,
+                601
+              ],
+              [
+                2007,
+                153
+              ],
+              [
+                2007,
+                154
+              ],
+              [
+                2007,
+                193
+              ],
+              [
+                2007,
+                401
+              ],
+              [
+                2007,
+                423
+              ],
+              [
+                2007,
+                437
+              ],
+              [
+                2007,
+                461
+              ],
+              [
+                2007,
+                502
+              ],
+              [
+                2007,
+                572
+              ],
+              [
+                2007,
+                652
+              ],
+              [
+                2007,
+                664
+              ],
+              [
+                2007,
+                702
+              ],
+              [
+                2007,
+                711
+              ],
+              [
+                2007,
+                741
+              ],
+              [
+                2007,
+                765
+              ],
+              [
+                2007,
+                1009
+              ],
+              [
+                2007,
+                1107
+              ],
+              [
+                2007,
+                1126
+              ],
+              [
+                2008,
+                469
+              ],
+              [
+                2008,
+                753
+              ],
+              [
+                2008,
+                797
+              ],
+              [
+                2008,
+                846
+              ],
+              [
+                2008,
+                909
+              ],
+              [
+                2008,
+                958
+              ],
+              [
+                2008,
+                1048
+              ],
+              [
+                2008,
+                1064
+              ],
+              [
+                2008,
+                1106
+              ],
+              [
+                2008,
+                1165
+              ],
+              [
+                2008,
+                1180
+              ],
+              [
+                2008,
+                1235
+              ],
+              [
+                2008,
+                1296
+              ],
+              [
+                2008,
+                1296
+              ],
+              [
+                2008,
+                1322
+              ],
+              [
+                2008,
+                1471
+              ],
+              [
+                2008,
+                1866
+              ],
+              [
+                2008,
+                1959
+              ],
+              [
+                2008,
+                2030
+              ],
+              [
+                2009,
+                212
+              ],
+              [
+                2009,
+                245
+              ],
+              [
+                2009,
+                345
+              ],
+              [
+                2009,
+                458
+              ],
+              [
+                2009,
+                538
+              ],
+              [
+                2009,
+                601
+              ],
+              [
+                2009,
+                620
+              ],
+              [
+                2009,
+                636
+              ],
+              [
+                2009,
+                687
+              ],
+              [
+                2009,
+                906
+              ],
+              [
+                2009,
+                952
+              ],
+              [
+                2009,
+                1014
+              ],
+              [
+                2009,
+                1014
+              ],
+              [
+                2009,
+                1063
+              ],
+              [
+                2009,
+                1073
+              ],
+              [
+                2009,
+                1097
+              ],
+              [
+                2009,
+                1102
+              ],
+              [
+                2009,
+                1191
+              ],
+              [
+                2009,
+                1255
+              ],
+              [
+                2009,
+                1394
+              ],
+              [
+                2009,
+                1394
+              ],
+              [
+                2009,
+                1415
+              ],
+              [
+                2009,
+                1432
+              ],
+              [
+                2009,
+                1484
+              ],
+              [
+                2009,
+                1550
+              ],
+              [
+                2009,
+                1595
+              ],
+              [
+                2009,
+                1652
+              ],
+              [
+                2009,
+                1667
+              ],
+              [
+                2009,
+                1697
+              ],
+              [
+                2009,
+                1743
+              ],
+              [
+                2009,
+                1744
+              ],
+              [
+                2009,
+                1781
+              ],
+              [
+                2009,
+                1877
+              ],
+              [
+                2009,
+                1906
+              ],
+              [
+                2009,
+                1910
+              ],
+              [
+                2009,
+                1913
+              ],
+              [
+                2009,
+                1916
+              ],
+              [
+                2009,
+                1925
+              ],
+              [
+                2009,
+                1949
+              ],
+              [
+                2009,
+                2008
+              ],
+              [
+                2009,
+                2059
+              ],
+              [
+                2009,
+                2091
+              ],
+              [
+                2009,
+                2196
+              ],
+              [
+                2009,
+                2256
+              ],
+              [
+                2009,
+                2258
+              ],
+              [
+                2009,
+                2261
+              ],
+              [
+                2009,
+                2391
+              ],
+              [
+                2010,
+                391
+              ],
+              [
+                2010,
+                456
+              ],
+              [
+                2010,
+                488
+              ],
+              [
+                2010,
+                787
+              ],
+              [
+                2010,
+                900
+              ],
+              [
+                2010,
+                919
+              ],
+              [
+                2010,
+                989
+              ],
+              [
+                2010,
+                993
+              ],
+              [
+                2010,
+                1018
+              ],
+              [
+                2010,
+                1114
+              ],
+              [
+                2010,
+                1143
+              ],
+              [
+                2010,
+                1144
+              ],
+              [
+                2010,
+                1403
+              ],
+              [
+                2010,
+                1417
+              ],
+              [
+                2010,
+                2008
+              ],
+              [
+                2010,
+                2030
+              ],
+              [
+                2010,
+                2069
+              ],
+              [
+                2010,
+                2086
+              ],
+              [
+                2010,
+                2103
+              ],
+              [
+                2010,
+                2120
+              ],
+              [
+                2010,
+                2147
+              ],
+              [
+                2010,
+                2204
+              ],
+              [
+                2010,
+                2345
+              ],
+              [
+                2010,
+                2371
+              ],
+              [
+                2010,
+                2457
+              ],
+              [
+                2011,
+                291
+              ],
+              [
+                2011,
+                313
+              ],
+              [
+                2011,
+                317
+              ],
+              [
+                2011,
+                344
+              ],
+              [
+                2011,
+                439
+              ],
+              [
+                2011,
+                533
+              ],
+              [
+                2011,
+                553
+              ],
+              [
+                2011,
+                568
+              ],
+              [
+                2011,
+                636
+              ],
+              [
+                2011,
+                719
+              ],
+              [
+                2011,
+                868
+              ],
+              [
+                2011,
+                924
+              ],
+              [
+                2011,
+                1012
+              ],
+              [
+                2011,
+                1073
+              ],
+              [
+                2011,
+                1222
+              ],
+              [
+                2011,
+                1295
+              ],
+              [
+                2011,
+                1309
+              ],
+              [
+                2011,
+                1320
+              ],
+              [
+                2011,
+                1481
+              ],
+              [
+                2011,
+                1510
+              ],
+              [
+                2011,
+                1613
+              ],
+              [
+                2011,
+                1745
+              ],
+              [
+                2011,
+                1771
+              ],
+              [
+                2011,
+                1970
+              ],
+              [
+                2011,
+                2267
+              ],
+              [
+                2011,
+                2432
+              ],
+              [
+                2011,
+                2489
+              ],
+              [
+                2011,
+                2508
+              ],
+              [
+                2011,
+                2580
+              ],
+              [
+                2011,
+                2584
+              ],
+              [
+                2011,
+                2622
+              ],
+              [
+                2012,
+                216
+              ],
+              [
+                2012,
+                278
+              ],
+              [
+                2012,
+                598
+              ],
+              [
+                2012,
+                693
+              ],
+              [
+                2012,
+                737
+              ],
+              [
+                2012,
+                789
+              ],
+              [
+                2012,
+                885
+              ],
+              [
+                2012,
+                1167
+              ],
+              [
+                2012,
+                1408
+              ],
+              [
+                2012,
+                1515
+              ],
+              [
+                2012,
+                1997
+              ],
+              [
+                2012,
+                2011
+              ],
+              [
+                2012,
+                2735
+              ],
+              [
+                2013,
+                583
+              ],
+              [
+                2013,
+                1109
+              ],
+              [
+                2013,
+                1202
+              ],
+              [
+                2013,
+                1478
+              ],
+              [
+                2013,
+                1568
+              ],
+              [
+                2013,
+                1598
+              ],
+              [
+                2013,
+                1670
+              ],
+              [
+                2013,
+                1793
+              ],
+              [
+                2013,
+                1835
+              ],
+              [
+                2013,
+                1850
+              ],
+              [
+                2013,
+                1911
+              ],
+              [
+                2013,
+                1965
+              ],
+              [
+                2013,
+                2525
+              ],
+              [
+                2014,
+                200
+              ],
+              [
+                2014,
+                1711
+              ],
+              [
+                2014,
+                1716
+              ],
+              [
+                2014,
+                1828
+              ],
+              [
+                2015,
+                564
+              ],
+              [
+                2016,
+                587
+              ],
+              [
+                2016,
+                1374
+              ],
+              [
+                2016,
+                1428
+              ],
+              [
+                2016,
+                1448
+              ],
+              [
+                2016,
+                1492
+              ],
+              [
+                2016,
+                1892
+              ],
+              [
+                2016,
+                1950
+              ],
+              [
+                2017,
+                1512
+              ],
+              [
+                2018,
+                1889
+              ],
+              [
+                2020,
+                4285
+              ],
+              [
+                2020,
+                4442
+              ],
+              [
+                2020,
+                6283
+              ],
+              [
+                2021,
+                2024
+              ],
+              [
+                2021,
+                3380
+              ],
+              [
+                2021,
+                3495
+              ],
+              [
+                2021,
+                4130
+              ],
+              [
+                2022,
+                1203
+              ],
+              [
+                2022,
+                1356
+              ],
+              [
+                2022,
+                1437
+              ],
+              [
+                2022,
+                1987
+              ],
+              [
+                2022,
+                5424
+              ],
+              [
+                2022,
+                5528
+              ],
+              [
+                2022,
+                5639
+              ],
+              [
+                2022,
+                5781
+              ],
+              [
+                2022,
+                5947
+              ],
+              [
+                2022,
+                6086
+              ],
+              [
+                2023,
+                2112
+              ],
+              [
+                2023,
+                3830
+              ],
+              [
+                2023,
+                3866
+              ],
+              [
+                2023,
+                6476
+              ],
+              [
+                2024,
+                2652
+              ],
+              [
+                2025,
+                2720
+              ],
+              [
+                2025,
+                6565
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "linhas",
+        "titulo": {
+          "pt": "O auge foi em 2009 no Atlântico (48 células novas no ano) e em 2019 no Mediterrâneo",
+          "en": "Peak year: 2009 in the Atlantic (48 new cells) and 2019 in the Mediterranean",
+          "es": "El auge fue en 2009 en el Atlántico (48 celdas nuevas) y en 2019 en el Mediterráneo"
+        },
+        "leitura": {
+          "pt": "Células de 1° da plataforma com registro corroborado de peixe-leão, acumulado por ano. Nos dois mares a invasão passou anos quase parada antes de disparar. No Mediterrâneo, registro anterior a 2012 não data a chegada.",
+          "en": "One-degree shelf cells with a corroborated lionfish record, cumulative by year. In both seas the invasion sat nearly still for years before taking off. In the Mediterranean, records before 2012 are not used to date arrival.",
+          "es": "Celdas de 1° de la plataforma con registro corroborado de pez león, acumulado por año. En ambos mares la invasión estuvo casi detenida durante años antes de dispararse. En el Mediterráneo, un registro anterior a 2012 no fecha la llegada."
+        },
+        "eixo_x": {
+          "pt": "Ano",
+          "en": "Year",
+          "es": "Año"
+        },
+        "eixo_y": {
+          "pt": "Células de 1° com registro",
+          "en": "1° cells with a record",
+          "es": "Celdas de 1° con registro"
+        },
+        "formato_x": "numero",
+        "formato_y": "numero",
+        "series": [
+          {
+            "nome": {
+              "pt": "Atlântico oeste",
+              "en": "Western Atlantic",
+              "es": "Atlántico occidental"
+            },
+            "papel": "principal",
+            "pontos": [
+              [
+                1985,
+                0
+              ],
+              [
+                1986,
+                0
+              ],
+              [
+                1987,
+                0
+              ],
+              [
+                1988,
+                0
+              ],
+              [
+                1989,
+                0
+              ],
+              [
+                1990,
+                1
+              ],
+              [
+                1991,
+                1
+              ],
+              [
+                1992,
+                1
+              ],
+              [
+                1993,
+                1
+              ],
+              [
+                1994,
+                1
+              ],
+              [
+                1995,
+                2
+              ],
+              [
+                1996,
+                2
+              ],
+              [
+                1997,
+                2
+              ],
+              [
+                1998,
+                2
+              ],
+              [
+                1999,
+                2
+              ],
+              [
+                2000,
+                6
+              ],
+              [
+                2001,
+                14
+              ],
+              [
+                2002,
+                18
+              ],
+              [
+                2003,
+                21
+              ],
+              [
+                2004,
+                25
+              ],
+              [
+                2005,
+                32
+              ],
+              [
+                2006,
+                36
+              ],
+              [
+                2007,
+                54
+              ],
+              [
+                2008,
+                75
+              ],
+              [
+                2009,
+                123
+              ],
+              [
+                2010,
+                148
+              ],
+              [
+                2011,
+                179
+              ],
+              [
+                2012,
+                193
+              ],
+              [
+                2013,
+                206
+              ],
+              [
+                2014,
+                214
+              ],
+              [
+                2015,
+                215
+              ],
+              [
+                2016,
+                222
+              ],
+              [
+                2017,
+                223
+              ],
+              [
+                2018,
+                224
+              ],
+              [
+                2019,
+                224
+              ],
+              [
+                2020,
+                227
+              ],
+              [
+                2021,
+                231
+              ],
+              [
+                2022,
+                241
+              ],
+              [
+                2023,
+                245
+              ],
+              [
+                2024,
+                246
+              ],
+              [
+                2025,
+                248
+              ]
+            ]
+          },
+          {
+            "nome": {
+              "pt": "Mediterrâneo",
+              "en": "Mediterranean",
+              "es": "Mediterráneo"
+            },
+            "papel": "alternativa",
+            "pontos": [
+              [
+                1991,
+                0
+              ],
+              [
+                1992,
+                0
+              ],
+              [
+                1993,
+                0
+              ],
+              [
+                1994,
+                0
+              ],
+              [
+                1995,
+                0
+              ],
+              [
+                1996,
+                0
+              ],
+              [
+                1997,
+                0
+              ],
+              [
+                1998,
+                0
+              ],
+              [
+                1999,
+                0
+              ],
+              [
+                2000,
+                0
+              ],
+              [
+                2001,
+                0
+              ],
+              [
+                2002,
+                0
+              ],
+              [
+                2003,
+                0
+              ],
+              [
+                2004,
+                0
+              ],
+              [
+                2005,
+                0
+              ],
+              [
+                2006,
+                0
+              ],
+              [
+                2007,
+                0
+              ],
+              [
+                2008,
+                0
+              ],
+              [
+                2009,
+                0
+              ],
+              [
+                2010,
+                0
+              ],
+              [
+                2011,
+                0
+              ],
+              [
+                2012,
+                1
+              ],
+              [
+                2013,
+                3
+              ],
+              [
+                2014,
+                11
+              ],
+              [
+                2015,
+                19
+              ],
+              [
+                2016,
+                27
+              ],
+              [
+                2017,
+                34
+              ],
+              [
+                2018,
+                39
+              ],
+              [
+                2019,
+                57
+              ],
+              [
+                2020,
+                69
+              ],
+              [
+                2021,
+                74
+              ],
+              [
+                2022,
+                75
+              ],
+              [
+                2023,
+                78
+              ],
+              [
+                2024,
+                85
+              ],
+              [
+                2025,
+                86
+              ]
+            ]
+          }
+        ]
+      }
+    ]
   },
-  "tempo_de_execucao_s": 137.2
+  "tempo_de_execucao_s": 153.5
 }

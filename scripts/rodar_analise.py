@@ -106,7 +106,10 @@ def main() -> None:
         },
         "limite_termico": termico,
     }
-    resultados["para_o_site"] = site.bloco(resultados)
+    distancia_atl, ano_atl, _ = analise.dados_da_frente(teatros["atlantico"])
+    ordem = np.lexsort((distancia_atl, ano_atl))
+    pontos_da_frente = [[int(ano_atl[k]), float(distancia_atl[k])] for k in ordem]
+    resultados["para_o_site"] = site.bloco(resultados, pontos_da_frente)
 
     figuras = graficos_do_estudo(base, teatros, curvas, simulacao, velocidades, validacoes, tabela, resultados)
     for nome, figura in figuras.items():

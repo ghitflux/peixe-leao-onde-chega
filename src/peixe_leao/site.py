@@ -65,7 +65,193 @@ def titulo_da_previsao(r: dict) -> str:
     return f"Até 2035, a chegada mais provável é no Nordeste do Brasil: até {_pct(n['topo_prob'], 'pt')} por célula"
 
 
-def bloco(r: dict) -> dict:
+ESTIMADORES_TRADUZIDOS = {
+    "Média: distância contra ano (linha de base)": {"pt": "Média: distância × ano", "en": "Mean: distance on year", "es": "Media: distancia × año"},
+    "Média: ano contra distância": {"pt": "Média: ano × distância", "en": "Mean: year on distance", "es": "Media: año × distancia"},
+    "Média: ano contra distância, com esforço": {"pt": "Média com esforço", "en": "Mean with effort", "es": "Media con esfuerzo"},
+    "Frente: quantil 0,90 da distância": {"pt": "Quantil 0,90 da distância", "en": "0.90 quantile of distance", "es": "Cuantil 0,90 de la distancia"},
+    "Frente: quantil 0,10 do ano": {"pt": "Quantil 0,10 do ano", "en": "0.10 quantile of year", "es": "Cuantil 0,10 del año"},
+    "Frente: envelope dos recordes": {"pt": "Envelope dos recordes", "en": "Record envelope", "es": "Envolvente de récords"},
+}
+IDIOMAS = ("pt", "en", "es")
+
+
+def _tres(funcao) -> dict:
+    """Monta o texto nos três idiomas a partir de uma função do idioma."""
+    return {idioma: funcao(idioma) for idioma in IDIOMAS}
+
+
+def _celula(lat_sul: int, lon_oeste: int, idioma: str) -> str:
+    """Rótulo curto da célula pelo canto sudoeste: '6°S 36°O' (em inglês, '6°S 36°W')."""
+    ns = "N" if lat_sul >= 0 else "S"
+    leste, oeste = {"pt": ("L", "O"), "en": ("E", "W"), "es": ("E", "O")}[idioma]
+    lo = leste if lon_oeste >= 0 else oeste
+    return f"{abs(int(lat_sul))}°{ns} {abs(int(lon_oeste))}°{lo}"
+
+
+def graficos_extras(r: dict, pontos_da_frente: list[list[float]]) -> list[dict]:
+    """Os outros achados do README como dados, para o site desenhar. Do mais importante para o menos.
+
+    `pontos_da_frente` são os pares [ano, distância em km] das células do Atlântico usadas na velocidade.
+    """
+    curvas = r["validacao"]["atlantico_2010"]["curvas"]
+
+    def serie(coluna: str) -> list:
+        return [[linha["ano"], round(float(linha[coluna]))] for linha in curvas]
+
+    # 1. a frente depois de 2010: o salto pela foz do Amazonas
+    salto = max(range(1, len(curvas)), key=lambda k: curvas[k]["observado_frente_km"] - curvas[k - 1]["observado_frente_km"])
+    ano_salto = curvas[salto]["ano"]
+    antes, depois, previsto = curvas[salto - 1]["observado_frente_km"], curvas[salto]["observado_frente_km"], curvas[salto]["modelo_frente_km"]
+    frente_validacao = {
+        "tipo": "linhas",
+        "titulo": {
+            "pt": f"Em {ano_salto} a frente saltou de {_n(antes, 0, 'pt')} para {_n(depois, 0, 'pt')} km; o modelo previa {_n(previsto, 0, 'pt')}",
+            "en": f"In {ano_salto} the front jumped from {_n(antes, 0, 'en')} to {_n(depois, 0, 'en')} km; the model expected {_n(previsto, 0, 'en')}",
+            "es": f"En {ano_salto} el frente saltó de {_n(antes, 0, 'es')} a {_n(depois, 0, 'es')} km; el modelo preveía {_n(previsto, 0, 'es')}",
+        },
+        "leitura": {
+            "pt": "Distância da frente ao ponto de introdução, pelo mar, com o modelo ajustado até 2010. A frente real ficou parada por anos e depois cruzou a foz do Amazonas de uma vez; o modelo previa um avanço contínuo.",
+            "en": "Sea distance from the front to the introduction point, with the model fitted through 2010. The real front stalled for years and then crossed the Amazon mouth in one step; the model expected a steady advance.",
+            "es": "Distancia del frente al punto de introducción, por mar, con el modelo ajustado hasta 2010. El frente real se detuvo durante años y luego cruzó la desembocadura del Amazonas de una vez; el modelo preveía un avance continuo.",
+        },
+        "eixo_x": {"pt": "Ano", "en": "Year", "es": "Año"},
+        "eixo_y": {"pt": "Distância da frente (km)", "en": "Front distance (km)", "es": "Distancia del frente (km)"},
+        "formato_x": "numero",
+        "formato_y": "numero",
+        "series": [
+            {"nome": {"pt": "Modelo de espalhamento", "en": "Spread model", "es": "Modelo de dispersión"}, "papel": "principal", "pontos": serie("modelo_frente_km")},
+            {"nome": {"pt": "Velocidade constante", "en": "Constant speed", "es": "Velocidad constante"}, "papel": "base", "pontos": serie("velocidade_constante_frente_km")},
+            {"nome": {"pt": "O que aconteceu", "en": "What happened", "es": "Lo que ocurrió"}, "papel": "neutro", "pontos": serie("observado_frente_km")},
+        ],
+        "faixa": {"serie": 0, "inferior": serie("modelo_frente_km_p05"), "superior": serie("modelo_frente_km_p95")},
+    }
+
+    # 2. a previsão (no lugar do mapa): as células do Atlântico com maior probabilidade
+    topo = r["previsao_maiores_probabilidades"]["atlantico"][:10]
+    rotulos = _tres(lambda idioma: [_celula(c["lat_sul"], c["lon_oeste"], idioma) for c in topo])
+    maior = topo[0]["prob_10_anos"]
+    previsao = {
+        "tipo": "barras",
+        "titulo": {
+            "pt": f"A célula mais provável tem {_pct(maior, 'pt')} de chance de ganhar registro em dez anos",
+            "en": f"The most likely cell has a {_pct(maior, 'en')} chance of a first record within ten years",
+            "es": f"La celda más probable tiene {_pct(maior, 'es')} de probabilidad de registro en diez años",
+        },
+        "leitura": {
+            "pt": "As dez células de 1° do Atlântico oeste ainda sem registro com maior probabilidade de primeiro registro, pelo canto sudoeste. Quase todas ficam no Nordeste do Brasil. É exercício de modelagem, não previsão oficial.",
+            "en": "The ten unrecorded 1° cells of the western Atlantic with the highest probability of a first record, labelled by their south-west corner. Nearly all lie along northeastern Brazil. A modelling exercise, not an official forecast.",
+            "es": "Las diez celdas de 1° del Atlántico occidental aún sin registro con mayor probabilidad de primer registro, por su esquina suroeste. Casi todas están en el nordeste de Brasil. Es un ejercicio de modelado, no un pronóstico oficial.",
+        },
+        "eixo_x": {"pt": "Célula (canto sudoeste)", "en": "Cell (south-west corner)", "es": "Celda (esquina suroeste)"},
+        "eixo_y": {"pt": "Probabilidade de primeiro registro", "en": "Probability of a first record", "es": "Probabilidad de primer registro"},
+        "formato_x": "numero",
+        "formato_y": "percentual",
+        "series": [
+            {"nome": {"pt": "Em 10 anos", "en": "Within 10 years", "es": "En 10 años"}, "papel": "principal", "rotulos": rotulos, "pontos": [[rotulos["pt"][k], c["prob_10_anos"]] for k, c in enumerate(topo)]},
+            {"nome": {"pt": "Em 5 anos", "en": "Within 5 years", "es": "En 5 años"}, "papel": "neutro", "rotulos": rotulos, "pontos": [[rotulos["pt"][k], c["prob_5_anos"]] for k, c in enumerate(topo)]},
+        ],
+    }
+
+    # 3. o erro de cada estimador de velocidade na invasão simulada
+    cenarios = list(dict.fromkeys(linha["cenario"] for linha in r["velocidade"]["simulacao"]))
+    erro = {(linha["cenario"], linha["estimador"]): linha["erro_relativo"] for linha in r["velocidade"]["simulacao"]}
+    nomes = list(ESTIMADORES_TRADUZIDOS)
+    rotulos_est = _tres(lambda idioma: [ESTIMADORES_TRADUZIDOS[nome][idioma] for nome in nomes])
+    erro_media = abs(erro[(cenarios[-1], nomes[0])])
+    erro_quantil = abs(erro[(cenarios[-1], "Frente: quantil 0,10 do ano")])
+
+    def barras(cenario: str) -> list:
+        return [[rotulos_est["pt"][k], round(erro[(cenario, nome)], 4)] for k, nome in enumerate(nomes)]
+
+    estimadores = {
+        "tipo": "barras",
+        "titulo": {
+            "pt": f"Com detecção imperfeita, a média erra a velocidade em {_pct(erro_media, 'pt')}; o quantil do ano, em {_n(erro_quantil * 100, 1, 'pt')}%",
+            "en": f"With imperfect detection the mean misses the speed by {_pct(erro_media, 'en')}; the year quantile by {_n(erro_quantil * 100, 1, 'en')}%",
+            "es": f"Con detección imperfecta, la media falla la velocidad en {_pct(erro_media, 'es')}; el cuantil del año, en {_n(erro_quantil * 100, 1, 'es')}%",
+        },
+        "leitura": {
+            "pt": "Erro médio de cada estimador numa invasão simulada com frente de 250 km por ano, em 200 simulações. Abaixo de zero, o estimador subestima a velocidade. Os de média erram mais quando há menos observadores longe da origem.",
+            "en": "Mean error of each estimator on a simulated invasion with a 250 km/yr front, over 200 runs. Below zero the estimator underestimates speed. The mean-based ones get worse when observers thin out far from the origin.",
+            "es": "Error medio de cada estimador en una invasión simulada con un frente de 250 km por año, en 200 simulaciones. Por debajo de cero, el estimador subestima la velocidad. Los de media fallan más cuando hay menos observadores lejos del origen.",
+        },
+        "eixo_x": {"pt": "Estimador", "en": "Estimator", "es": "Estimador"},
+        "eixo_y": {"pt": "Erro relativo na velocidade", "en": "Relative error in speed", "es": "Error relativo en la velocidad"},
+        "formato_x": "numero",
+        "formato_y": "percentual",
+        "series": [
+            {"nome": {"pt": "Menos esforço longe da origem", "en": "Less effort far from the origin", "es": "Menos esfuerzo lejos del origen"}, "papel": "principal", "rotulos": rotulos_est, "pontos": barras(cenarios[-1])},
+            {"nome": {"pt": "Detecção imperfeita, esforço uniforme", "en": "Imperfect detection, even effort", "es": "Detección imperfecta, esfuerzo uniforme"}, "papel": "neutro", "rotulos": rotulos_est, "pontos": barras(cenarios[-2])},
+        ],
+    }
+
+    # 4. distância contra ano do primeiro registro, célula a célula (Atlântico)
+    from peixe_leao import frente  # import local: o resto do módulo só formata texto
+
+    anos = [p[0] for p in pontos_da_frente]
+    distancias = [p[1] for p in pontos_da_frente]
+    anos_recorde, recordes = frente.envelope(distancias, anos)
+    v = r["velocidade"]["dados_reais"]["atlantico"]
+    media = v["Média: distância contra ano (linha de base)"]["km_por_ano"]
+    frentes = [v[nome]["km_por_ano"] for nome in nomes[3:]]
+    nuvem = {
+        "tipo": "pontos",
+        "titulo": {
+            "pt": f"No Atlântico, a média dá {_n(media, 0, 'pt')} km por ano; os estimadores de frente, de {_n(min(frentes), 0, 'pt')} a {_n(max(frentes), 0, 'pt')}",
+            "en": f"In the Atlantic the mean gives {_n(media, 0, 'en')} km/yr; front estimators give {_n(min(frentes), 0, 'en')} to {_n(max(frentes), 0, 'en')}",
+            "es": f"En el Atlántico, la media da {_n(media, 0, 'es')} km por año; los estimadores de frente, de {_n(min(frentes), 0, 'es')} a {_n(max(frentes), 0, 'es')}",
+        },
+        "leitura": {
+            "pt": "Cada ponto é uma célula de 1°: o ano do primeiro registro e a distância pelo mar até a Flórida. Os recordes de distância desenham a frente; a nuvem embaixo são as células ocupadas depois que a frente passou, e é ela que puxa a média para baixo.",
+            "en": "Each dot is a 1° cell: the year of its first record and its sea distance to Florida. The distance records trace the front; the cloud below is cells filled in after the front passed, which is what drags the mean down.",
+            "es": "Cada punto es una celda de 1°: el año del primer registro y la distancia por mar hasta Florida. Los récords de distancia dibujan el frente; la nube de abajo son las celdas ocupadas después de que pasó el frente, y es la que arrastra la media hacia abajo.",
+        },
+        "eixo_x": {"pt": "Ano do primeiro registro", "en": "Year of first record", "es": "Año del primer registro"},
+        "eixo_y": {"pt": "Distância até a introdução (km)", "en": "Distance to introduction (km)", "es": "Distancia a la introducción (km)"},
+        "formato_x": "numero",
+        "formato_y": "numero",
+        "series": [
+            {"nome": {"pt": "Recordes de distância (a frente)", "en": "Distance records (the front)", "es": "Récords de distancia (el frente)"}, "papel": "principal", "pontos": [[int(a), round(float(d))] for a, d in zip(anos_recorde, recordes)]},
+            {"nome": {"pt": "Células", "en": "Cells", "es": "Celdas"}, "papel": "neutro", "pontos": [[int(a), round(float(d))] for a, d in pontos_da_frente[:300]]},
+        ],
+    }
+
+    # 5. a área ocupada ao longo do tempo (resume o mapa do primeiro registro)
+    atl, med = r["teatros"]["atlantico"], r["teatros"]["mediterraneo"]
+    area = {
+        "tipo": "linhas",
+        "titulo": {
+            "pt": f"O auge foi em {atl['ano_de_pico']} no Atlântico ({atl['novas_celulas_no_pico']} células novas no ano) e em {med['ano_de_pico']} no Mediterrâneo",
+            "en": f"Peak year: {atl['ano_de_pico']} in the Atlantic ({atl['novas_celulas_no_pico']} new cells) and {med['ano_de_pico']} in the Mediterranean",
+            "es": f"El auge fue en {atl['ano_de_pico']} en el Atlántico ({atl['novas_celulas_no_pico']} celdas nuevas) y en {med['ano_de_pico']} en el Mediterráneo",
+        },
+        "leitura": {
+            "pt": "Células de 1° da plataforma com registro corroborado de peixe-leão, acumulado por ano. Nos dois mares a invasão passou anos quase parada antes de disparar. No Mediterrâneo, registro anterior a 2012 não data a chegada.",
+            "en": "One-degree shelf cells with a corroborated lionfish record, cumulative by year. In both seas the invasion sat nearly still for years before taking off. In the Mediterranean, records before 2012 are not used to date arrival.",
+            "es": "Celdas de 1° de la plataforma con registro corroborado de pez león, acumulado por año. En ambos mares la invasión estuvo casi detenida durante años antes de dispararse. En el Mediterráneo, un registro anterior a 2012 no fecha la llegada.",
+        },
+        "eixo_x": {"pt": "Ano", "en": "Year", "es": "Año"},
+        "eixo_y": {"pt": "Células de 1° com registro", "en": "1° cells with a record", "es": "Celdas de 1° con registro"},
+        "formato_x": "numero",
+        "formato_y": "numero",
+        "series": [
+            {"nome": {"pt": "Atlântico oeste", "en": "Western Atlantic", "es": "Atlántico occidental"}, "papel": "principal", "pontos": [[x["ano"], x["celulas_com_registro"]] for x in atl["area_e_frente"]]},
+            {"nome": {"pt": "Mediterrâneo", "en": "Mediterranean", "es": "Mediterráneo"}, "papel": "alternativa", "pontos": [[x["ano"], x["celulas_com_registro"]] for x in med["area_e_frente"]]},
+        ],
+    }
+    return [frente_validacao, previsao, estimadores, nuvem, area]
+
+
+def bloco(r: dict, pontos_da_frente: list[list[float]] | None = None) -> dict:
+    """Bloco do site. Com `pontos_da_frente`, inclui também `graficos_extras`."""
+    principal = _bloco_principal(r)
+    if pontos_da_frente is not None:
+        principal["graficos_extras"] = graficos_extras(r, pontos_da_frente)
+    return principal
+
+
+def _bloco_principal(r: dict) -> dict:
     n = numeros(r)
     v10 = r["validacao"]["atlantico_2010"]
     curvas = v10["curvas"]

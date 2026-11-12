@@ -333,7 +333,7 @@ Pré-requisito: [`uv`](https://docs.astral.sh/uv/getting-started/installation/).
 ```bash
 uv sync
 uv run python scripts/rodar_analise.py   # regera reports/ a partir do extrato em data/ (cerca de 3 minutos)
-uv run pytest -q -p no:cacheprovider     # 43 testes, não dependem dos dados
+uv run pytest -q -p no:cacheprovider     # 46 testes, não dependem dos dados
 uv run python scripts/baixar_dados.py    # opcional: recoleta tudo (20 a 40 minutos) e regrava data/
 ```
 
@@ -352,7 +352,7 @@ montado por `scripts/montar_notebook.py`.
 │   ├── analise.py             # orquestra cada tabela
 │   └── graficos.py, estilo.py, site.py
 ├── scripts/                   # baixar_dados.py, rodar_analise.py, montar_notebook.py
-├── tests/                     # 43 testes (pytest)
+├── tests/                     # 46 testes (pytest)
 └── reports/                   # resultados.json, probabilidade_de_chegada.csv e figuras
 ```
 
